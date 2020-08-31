@@ -1,0 +1,22 @@
+typeSpecDir: "./Messages"
+serviceSpecDir: "./Services"
+specFormat: "yaml" #set to yaml or json
+dependencies: [] #no dependencies :-)
+dependenciesDir: installedSpecs
+muSpec:
+  types:
+    - "./muspec/**types.yaml"
+  services:
+    - "./muspec/**services.yaml"
+commands:
+  publishNpm: "scripts/test.sh"
+flows:
+  default:
+    - muType2Spec
+    - muService2Spec
+build:
+  proto:
+    targetTypeDir: "./protos/Messages" #Hint: add this to your proto include path
+    targetServiceDir: "./dist/protos/Services" #Hint: add this to your proto include path
+  esModule:
+    targetFile: "./dist/env.js"
