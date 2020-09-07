@@ -5,7 +5,14 @@ __proto:
     package: google.protobuf.types.known
     targetfile: field_mask.proto
     imports: []
-    options: {}
+    options:
+        csharp_namespace : "Google.Protobuf.WellKnownTypes"
+        java_package : "com.google.protobuf"
+        java_outer_classname : "FieldMaskProto"
+        java_multiple_files : true
+        objc_class_prefix : "GPB"
+        go_package : "google.golang.org/protobuf/types/known/fieldmaskpb"
+        cc_enable_arenas : true
 fields:
     paths:
         type: string
