@@ -7,7 +7,13 @@ __proto:
     package: google.protobuf
     targetfile: any.proto
     imports: []
-    options: {}
+    options:
+        csharp_namespace: Google.Protobuf.WellKnownTypes
+        go_package: google.golang.org/protobuf/types/known/anypb
+        java_multiple_files: "true"
+        java_outer_classname: AnyProto
+        java_package: com.google.protobuf
+        objc_class_prefix: GPB
 fields:
     type_url:
         type: string
