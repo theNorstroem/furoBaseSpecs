@@ -1,47 +1,68 @@
 {
-  "name": "link",
-  "type": "Link",
-  "description": "link",
-  "__proto": {
-    "package": "furo",
-    "imports": [],
-    "targetfile": "link.proto"
+ "name": "link",
+ "type": "Link",
+ "description": "link",
+ "__proto": {
+  "package": "furo",
+  "targetfile": "link.proto",
+  "imports": [],
+  "options": null
+ },
+ "fields": {
+  "rel": {
+   "type": "string",
+   "description": "the relationship...",
+   "__proto": {
+    "number": 1,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
   },
-  "fields": {
-    "rel": {
-      "description": "the relationship...",
-      "type": "string",
-      "__proto": {
-        "number": 1
-      }
-    },
-    "method": {
-      "description": "method of curl v1.0.0",
-      "type": "string",
-      "__proto": {
-        "number": 2
-      }
-    },
-    "href": {
-      "description": "link",
-      "type": "string",
-      "__proto": {
-        "number": 3
-      }
-    },
-    "type": {
-      "description": "mime type",
-      "type": "string",
-      "__proto": {
-        "number": 4
-      }
-    },
-    "service": {
-      "description": "name of the service which can handle this link",
-      "type": "string",
-      "__proto": {
-        "number": 5
-      }
-    }
+  "method": {
+   "type": "string",
+   "description": "method of curl v1.0.0",
+   "__proto": {
+    "number": 2,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
+  },
+  "href": {
+   "type": "string",
+   "description": "link",
+   "__proto": {
+    "number": 3,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
+  },
+  "type": {
+   "type": "string",
+   "description": "mime type",
+   "__proto": {
+    "number": 4,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
+  },
+  "service": {
+   "type": "string",
+   "description": "name of the service which can handle this link",
+   "__proto": {
+    "number": 5,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
   }
+ }
 }

@@ -12,8 +12,7 @@ commands:
   publishNpm: "scripts/test.sh"
 flows:
   default:
-    - muType2Spec
-    - muService2Spec
+
 build:
   proto:
     targetTypeDir: "./protos/Messages" #Hint: add this to your proto include path

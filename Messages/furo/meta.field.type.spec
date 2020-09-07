@@ -1,27 +1,35 @@
 {
-  "name": "metafield",
-  "type": "MetaField",
-  "description": "fields of meta info",
-  "__proto": {
-    "package": "furo",
-    "imports": [
-    ],
-    "targetfile": "meta.proto"
+ "name": "metafield",
+ "type": "MetaField",
+ "description": "fields of meta info",
+ "__proto": {
+  "package": "furo",
+  "targetfile": "meta.proto",
+  "imports": [],
+  "options": null
+ },
+ "fields": {
+  "meta": {
+   "type": "furo.FieldMeta",
+   "description": "meta informatioxn of a field",
+   "__proto": {
+    "number": 1,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
   },
-  "fields": {
-    "meta": {
-      "description": "meta informatioxn of a field",
-      "type": "furo.FieldMeta",
-      "__proto": {
-        "number": 1
-      }
-    },
-    "constraints": {
-      "description": "constraints for a field",
-      "type": "map<string,furo.FieldConstraint>",
-      "__proto": {
-        "number": 2
-      }
-    }
+  "constraints": {
+   "type": "map\u003cstring,furo.FieldConstraint\u003e",
+   "description": "constraints for a field",
+   "__proto": {
+    "number": 2,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
   }
+ }
 }

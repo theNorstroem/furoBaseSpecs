@@ -1,19 +1,24 @@
 {
-  "name": "meta",
-  "type": "Meta",
-  "description": "meta info",
-  "__proto": {
-    "package": "furo",
-    "imports": [],
-    "targetfile": "meta.proto"
-  },
+ "name": "meta",
+ "type": "Meta",
+ "description": "meta info",
+ "__proto": {
+  "package": "furo",
+  "targetfile": "meta.proto",
+  "imports": [],
+  "options": null
+ },
+ "fields": {
   "fields": {
-    "fields": {
-      "description": "fields of meta info",
-      "type": "map<string, furo.MetaField>",
-      "__proto": {
-        "number": 1
-      }
-    }
+   "type": "map\u003cstring, furo.MetaField\u003e",
+   "description": "fields of meta info",
+   "__proto": {
+    "number": 1,
+    "oneof": ""
+   },
+   "__ui": null,
+   "meta": null,
+   "constraints": null
   }
+ }
 }
