@@ -6,12 +6,12 @@ __proto:
     targetfile: money.proto
     imports: []
     options:
-        cc_enable_arenas : true
-        go_package : "google.golang.org/genproto/googleapis/type/money;money"
-        java_multiple_files : true
-        java_outer_classname : "MoneyProto"
-        java_package : "com.google.type"
-        objc_class_prefix : "GTP"
+        cc_enable_arenas: "true"
+        go_package: google.golang.org/genproto/googleapis/type/money;money
+        java_multiple_files: "true"
+        java_outer_classname: MoneyProto
+        java_package: com.google.type
+        objc_class_prefix: GTP
 fields:
     display_name:
         type: string

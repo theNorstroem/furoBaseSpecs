@@ -9,7 +9,7 @@ __proto:
 fields:
     rel:
         type: string
-        description: the relationship...
+        description: the relationship like self...
         __proto:
             number: 1
             oneof: ""

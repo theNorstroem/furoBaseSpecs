@@ -6,12 +6,12 @@ __proto:
     targetfile: date.proto
     imports: []
     options:
-        cc_enable_arenas : true
-        go_package : "google.golang.org/genproto/googleapis/type/date;date"
-        java_multiple_files : true
-        java_outer_classname : "DateProto"
-        java_package : "com.google.type"
-        objc_class_prefix : "GTP"
+        cc_enable_arenas: "true"
+        go_package: google.golang.org/genproto/googleapis/type/date;date
+        java_multiple_files: "true"
+        java_outer_classname: DateProto
+        java_package: com.google.type
+        objc_class_prefix: GTP
 fields:
     display_name:
         type: string
