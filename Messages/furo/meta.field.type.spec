@@ -5,7 +5,14 @@ __proto:
     package: furo
     targetfile: meta.proto
     imports: []
-    options: {}
+    options:
+        cc_enable_arenas: "true"
+        csharp_namespace: Furo.Meta
+        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/meta;metapb
+        java_multiple_files: "true"
+        java_outer_classname: MetaProto
+        java_package: pro.furo.meta
+        objc_class_prefix: FPB
 fields:
     meta:
         type: furo.FieldMeta

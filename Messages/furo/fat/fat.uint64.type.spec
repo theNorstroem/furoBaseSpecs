@@ -5,7 +5,14 @@ __proto:
     package: furo.fat
     targetfile: fat.proto
     imports: []
-    options: {}
+    options:
+        cc_enable_arenas: "true"
+        csharp_namespace: Furo.Fat # von package
+        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/fat;fatpb # aus .spectools.module + pb + package + targetfile ohne .proto + pb
+        java_multiple_files: "true"
+        java_outer_classname: FatProto # von targetfile
+        java_package: pro.furo.fat # tld + package (pro + furo.fat)
+        objc_class_prefix: FPB # (F)uro(P)roto(B)uff
 fields:
     value:
         type: uint64

@@ -6,7 +6,14 @@ __proto:
     targetfile: meta.proto
     imports:
         - google/protobuf/any.proto
-    options: {}
+    options:
+        cc_enable_arenas: "true"
+        csharp_namespace: Furo.Meta
+        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/meta;metapb
+        java_multiple_files: "true"
+        java_outer_classname: MetaProto
+        java_package: pro.furo.meta
+        objc_class_prefix: FPB
 fields:
     list:
         type: google.protobuf.Any
