@@ -6,7 +6,7 @@ __proto:
     targetfile: property.proto
     imports:
         - google/protobuf/any.proto
-        - furo/meta.proto
+        - furo/furo.proto
     options:
         cc_enable_arenas: "true"
         csharp_namespace: Furo.Property

@@ -3,15 +3,15 @@ type: Link
 description: link
 __proto:
     package: furo
-    targetfile: link.proto
+    targetfile: furo.proto
     imports: []
     options:
         cc_enable_arenas: "true"
-        csharp_namespace: Furo.Link
-        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/link;linkpb
+        csharp_namespace: Furo
+        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo;furopb
         java_multiple_files: "true"
-        java_outer_classname: LinkProto
-        java_package: pro.furo.link
+        java_outer_classname: FuroProto
+        java_package: pro.furo
         objc_class_prefix: FPB
 fields:
     rel:

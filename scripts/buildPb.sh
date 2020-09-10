@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-
-DOMAINTYPESPATH=github.com/veith/spectest/pkg/domaintypes
 TARGETDIR="../../pb/"
 
 # enable recursion for /**/*.xxx

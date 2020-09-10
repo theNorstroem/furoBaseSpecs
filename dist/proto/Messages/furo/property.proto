@@ -9,7 +9,7 @@ option java_outer_classname = "PropertyProto";
 option java_package = "pro.furo.property";
 option objc_class_prefix = "FPB";
 
-import "furo/meta.proto";
+import "furo/furo.proto";
 import "google/protobuf/any.proto";
 
 

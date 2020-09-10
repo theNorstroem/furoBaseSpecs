@@ -3,16 +3,15 @@ type: Reference
 description: reference
 __proto:
     package: furo
-    targetfile: reference.proto
-    imports:
-        - furo/link.proto
+    targetfile: furo.proto
+    imports: []
     options:
         cc_enable_arenas: "true"
-        csharp_namespace: Furo.Reference
-        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/reference;referencepb
+        csharp_namespace: Furo
+        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo;furopb
         java_multiple_files: "true"
-        java_outer_classname: ReferenceProto
-        java_package: pro.furo.reference
+        java_outer_classname: FuroProto
+        java_package: pro.furo
         objc_class_prefix: FPB
 fields:
     display_name:

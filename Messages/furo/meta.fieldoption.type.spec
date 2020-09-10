@@ -3,16 +3,16 @@ type: Fieldoption
 description: Metas for a field
 __proto:
     package: furo
-    targetfile: meta.proto
+    targetfile: furo.proto
     imports:
         - google/protobuf/any.proto
     options:
         cc_enable_arenas: "true"
-        csharp_namespace: Furo.Meta
-        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/meta;metapb
+        csharp_namespace: Furo
+        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo;furopb
         java_multiple_files: "true"
-        java_outer_classname: MetaProto
-        java_package: pro.furo.meta
+        java_outer_classname: FuroProto
+        java_package: pro.furo
         objc_class_prefix: FPB
 fields:
     list:
