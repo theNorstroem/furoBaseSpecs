@@ -10,9 +10,9 @@ package furopb
 
 import (
 	proto "github.com/golang/protobuf/proto"
+	any "github.com/golang/protobuf/ptypes/any"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	anypb "google.golang.org/protobuf/types/known/anypb"
 	reflect "reflect"
 	sync "sync"
 )
@@ -105,7 +105,7 @@ type FieldMeta struct {
 	// Fieldoptions
 	Options *Fieldoption `protobuf:"bytes,6,opt,name=options,proto3" json:"options,omitempty"`
 	// Put in type specific metas for your fields here
-	Typespecific *anypb.Any `protobuf:"bytes,7,opt,name=typespecific,proto3" json:"typespecific,omitempty"`
+	Typespecific *any.Any `protobuf:"bytes,7,opt,name=typespecific,proto3" json:"typespecific,omitempty"`
 }
 
 func (x *FieldMeta) Reset() {
@@ -182,7 +182,7 @@ func (x *FieldMeta) GetOptions() *Fieldoption {
 	return nil
 }
 
-func (x *FieldMeta) GetTypespecific() *anypb.Any {
+func (x *FieldMeta) GetTypespecific() *any.Any {
 	if x != nil {
 		return x.Typespecific
 	}
@@ -196,7 +196,7 @@ type Fieldoption struct {
 	unknownFields protoimpl.UnknownFields
 
 	// a list with options, use furo.optionitem or your own
-	List []*anypb.Any `protobuf:"bytes,1,rep,name=list,proto3" json:"list,omitempty"`
+	List []*any.Any `protobuf:"bytes,1,rep,name=list,proto3" json:"list,omitempty"`
 	// Add flags for your field. This can be something like "searchable".
 	// //The flags can be used by generators, ui components,...
 	//
@@ -235,7 +235,7 @@ func (*Fieldoption) Descriptor() ([]byte, []int) {
 	return file_furo_furo_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *Fieldoption) GetList() []*anypb.Any {
+func (x *Fieldoption) GetList() []*any.Any {
 	if x != nil {
 		return x.List
 	}
@@ -678,7 +678,7 @@ var file_furo_furo_proto_goTypes = []interface{}{
 	(*Reference)(nil),       // 7: furo.Reference
 	nil,                     // 8: furo.Meta.FieldsEntry
 	nil,                     // 9: furo.MetaField.ConstraintsEntry
-	(*anypb.Any)(nil),       // 10: google.protobuf.Any
+	(*any.Any)(nil),         // 10: google.protobuf.Any
 }
 var file_furo_furo_proto_depIdxs = []int32{
 	2,  // 0: furo.FieldMeta.options:type_name -> furo.Fieldoption
