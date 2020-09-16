@@ -1,6 +1,9 @@
-name: uint32value
+name: UInt32Value
 type: UInt32Value
-description: Wrapper message for `uint32`.  https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/wrappers.proto
+description: |-
+    Wrapper message for `uint32`.
+
+     The JSON representation for `UInt32Value` is JSON number.
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -16,10 +19,23 @@ __proto:
 fields:
     value:
         type: uint32
-        description: The JSON representation for `UInt32Value` is JSON number
+        description: The uint32 value.
         __proto:
             number: 1
             oneof: ""
-        __ui: null
-        meta: null
+        __ui:
+            component: ""
+            flags: []
+            noinit: false
+            noskip: false
+        meta:
+            default: ""
+            hint: ""
+            label: label.UInt32Value.value
+            options:
+                flags: []
+                list: []
+            readonly: false
+            repeated: false
+            typespecific: null
         constraints: {}

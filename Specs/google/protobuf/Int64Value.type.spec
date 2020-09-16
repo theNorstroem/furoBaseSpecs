@@ -1,6 +1,9 @@
-name: int64value
+name: Int64Value
 type: Int64Value
-description: Wrapper message for `int64`.  https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/wrappers.proto
+description: |-
+    Wrapper message for `int64`.
+
+     The JSON representation for `Int64Value` is JSON string.
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -16,10 +19,23 @@ __proto:
 fields:
     value:
         type: int64
-        description: The JSON representation for `Int64Value` is JSON string
+        description: The int64 value.
         __proto:
             number: 1
             oneof: ""
-        __ui: null
-        meta: null
+        __ui:
+            component: ""
+            flags: []
+            noinit: false
+            noskip: false
+        meta:
+            default: ""
+            hint: ""
+            label: label.Int64Value.value
+            options:
+                flags: []
+                list: []
+            readonly: false
+            repeated: false
+            typespecific: null
         constraints: {}

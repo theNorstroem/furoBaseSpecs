@@ -1,6 +1,9 @@
-name: stringvalue
+name: StringValue
 type: StringValue
-description: Wrapper message for `string`.  https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/wrappers.proto
+description: |-
+    Wrapper message for `string`.
+
+     The JSON representation for `StringValue` is JSON string.
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -16,10 +19,23 @@ __proto:
 fields:
     value:
         type: string
-        description: The JSON representation for `StringValue` is JSON string
+        description: The string value.
         __proto:
             number: 1
             oneof: ""
-        __ui: null
-        meta: null
+        __ui:
+            component: ""
+            flags: []
+            noinit: false
+            noskip: false
+        meta:
+            default: ""
+            hint: ""
+            label: label.StringValue.value
+            options:
+                flags: []
+                list: []
+            readonly: false
+            repeated: false
+            typespecific: null
         constraints: {}

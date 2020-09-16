@@ -10,10 +10,10 @@ package propertypb
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	any "github.com/golang/protobuf/ptypes/any"
 	furo "github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	anypb "google.golang.org/protobuf/types/known/anypb"
 	reflect "reflect"
 	sync "sync"
 )
@@ -138,7 +138,7 @@ type Property struct {
 	// String representation of the property
 	DisplayName string `protobuf:"bytes,2,opt,name=display_name,json=displayName,proto3" json:"display_name,omitempty"`
 	// data part of the property
-	Data *any.Any `protobuf:"bytes,3,opt,name=data,proto3" json:"data,omitempty"`
+	Data *anypb.Any `protobuf:"bytes,3,opt,name=data,proto3" json:"data,omitempty"`
 	// Meta for the response
 	Meta *furo.Meta `protobuf:"bytes,4,opt,name=meta,proto3" json:"meta,omitempty"`
 	// property code for additional settings
@@ -195,7 +195,7 @@ func (x *Property) GetDisplayName() string {
 	return ""
 }
 
-func (x *Property) GetData() *any.Any {
+func (x *Property) GetData() *anypb.Any {
 	if x != nil {
 		return x.Data
 	}
@@ -400,7 +400,7 @@ var file_furo_property_proto_goTypes = []interface{}{
 	(*Property)(nil),             // 2: furo.Property
 	(*StringOptionProperty)(nil), // 3: furo.StringOptionProperty
 	(*StringProperty)(nil),       // 4: furo.StringProperty
-	(*any.Any)(nil),              // 5: google.protobuf.Any
+	(*anypb.Any)(nil),            // 5: google.protobuf.Any
 	(*furo.Meta)(nil),            // 6: furo.Meta
 }
 var file_furo_property_proto_depIdxs = []int32{

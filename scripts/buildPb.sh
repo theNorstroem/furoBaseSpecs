@@ -6,8 +6,6 @@ shopt -s globstar dotglob
 
 cd dist/proto
 
-# remove google protos
-rm -rf google
 
 # clear
 rm -rf $TARGETDIR

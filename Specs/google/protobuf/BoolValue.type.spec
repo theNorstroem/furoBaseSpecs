@@ -1,6 +1,9 @@
-name: boolvalue
+name: BoolValue
 type: BoolValue
-description: Wrapper message for `bool`.  https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/wrappers.proto
+description: |-
+    Wrapper message for `bool`.
+
+     The JSON representation for `BoolValue` is JSON `true` and `false`.
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -16,10 +19,23 @@ __proto:
 fields:
     value:
         type: bool
-        description: The JSON representation for `BoolValue` is JSON `true` and `false`
+        description: The bool value.
         __proto:
             number: 1
             oneof: ""
-        __ui: null
-        meta: null
+        __ui:
+            component: ""
+            flags: []
+            noinit: false
+            noskip: false
+        meta:
+            default: ""
+            hint: ""
+            label: label.BoolValue.value
+            options:
+                flags: []
+                list: []
+            readonly: false
+            repeated: false
+            typespecific: null
         constraints: {}

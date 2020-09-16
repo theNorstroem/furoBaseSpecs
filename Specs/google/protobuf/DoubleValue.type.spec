@@ -1,6 +1,9 @@
-name: doublevalue
+name: DoubleValue
 type: DoubleValue
-description: Wrapper message for `double`.  https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/wrappers.proto
+description: |-
+    Wrapper message for `double`.
+
+     The JSON representation for `DoubleValue` is JSON number.
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -16,10 +19,23 @@ __proto:
 fields:
     value:
         type: double
-        description: The JSON representation for `DoubleValue` is JSON number
+        description: The double value.
         __proto:
             number: 1
             oneof: ""
-        __ui: null
-        meta: null
+        __ui:
+            component: ""
+            flags: []
+            noinit: false
+            noskip: false
+        meta:
+            default: ""
+            hint: ""
+            label: label.DoubleValue.value
+            options:
+                flags: []
+                list: []
+            readonly: false
+            repeated: false
+            typespecific: null
         constraints: {}
