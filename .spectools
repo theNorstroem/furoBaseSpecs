@@ -1,7 +1,6 @@
 module: github.com/theNorstroem/FuroBaseSpecs
 version: "v1.10.2"
-typeSpecDir: "./Messages"
-serviceSpecDir: "./Services"
+specDir: "./Specs"
 specFormat: "yaml" #set to yaml or json
 dependencies: [] #no dependencies :-)
 dependenciesDir: installedSpecs
@@ -13,12 +12,11 @@ commands:
   buildPb: "scripts/buildPb.sh"
 flows:
   default:
-    - genMessageProtos
+    - genMessageProtos #we only have messages
     - buildPb
     - genEsModule
 build:
   proto:
-    targetTypeDir: "./dist/proto/Messages" #Hint: add this to your proto include path
-    targetServiceDir: "./dist/proto/Services" #Hint: add this to your proto include path
+    targetDir: "dist/proto" #Hint: add this to your proto include path
   esModule:
     targetFile: "./dist/es6/env.js"

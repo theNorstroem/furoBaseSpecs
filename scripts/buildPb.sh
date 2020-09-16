@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-TARGETDIR="../../pb/"
+TARGETDIR="../pb/"
 
 # enable recursion for /**/*.xxx
 shopt -s globstar dotglob
 
-cd dist/proto/Messages
+cd dist/proto
 
 # clear
 rm -rf $TARGETDIR
