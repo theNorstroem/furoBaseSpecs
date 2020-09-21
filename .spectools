@@ -1,12 +1,17 @@
 module: github.com/theNorstroem/FuroBaseSpecs
-version: "v1.10.2"
 specDir: "./Specs"
 specFormat: "yaml" #set to yaml or json
 dependencies: [] #no dependencies :-)
 dependenciesDir: installedSpecs
 muSpec:
-  types: []
-  services: []
+  types:
+    - "./muspec/**/*types.yaml"
+    - "./muspec/*types.yaml"
+  services:
+    - "./muspec/**/*services.yaml"
+    - "./muspec/*services.yaml"
+  goPackageBase: "github.com/theNorstroem/FuroBaseSpecs/dist/pb/" #this is used to prefix the go package option
+  dir: "muspec"
 commands:
   publishNpm: "scripts/test.sh"
   buildPb: "scripts/buildPb.sh"
