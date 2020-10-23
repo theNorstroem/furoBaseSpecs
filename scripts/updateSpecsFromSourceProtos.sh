@@ -5,4 +5,4 @@ shopt -s globstar dotglob
 
 cd sourceProtos
 
-protoc -I. --furo-specs_out=:../Specs **/*.proto
+protoc -I. --furo-specs_out=:../specs **/*.proto

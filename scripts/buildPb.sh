@@ -12,13 +12,10 @@ rm -rf $TARGETDIR
 mkdir $TARGETDIR
 
 
-FILES=./**/*.proto
+FILES=./furo/*.proto
 
 protoc --proto_path=./ \
 -I. \
--I/usr/local/include \
--I$GOPATH/src \
--I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
 --go_out=\
 :$TARGETDIR $FILES
 
@@ -26,4 +23,3 @@ protoc --proto_path=./ \
 cd $TARGETDIR
 mv github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo furo
 rm -rf github.com
-rm -rf google.golang.org

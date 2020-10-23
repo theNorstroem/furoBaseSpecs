@@ -1,5 +1,5 @@
 module: github.com/theNorstroem/FuroBaseSpecs
-specDir: "./Specs"
+specDir: "./specs"
 specFormat: "yaml" #set to yaml or json
 dependencies: [] #no dependencies :-)
 dependenciesDir: installedSpecs
