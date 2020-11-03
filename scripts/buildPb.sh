@@ -12,7 +12,7 @@ rm -rf $TARGETDIR
 mkdir $TARGETDIR
 
 
-FILES=./furo/*.proto
+FILES=./furo/**/*.proto
 
 protoc --proto_path=./ \
 -I. \
