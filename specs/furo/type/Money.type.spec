@@ -6,7 +6,7 @@ __proto:
   targetfile: type.proto
   imports: [ ]
   options:
-    go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type;typepb
+    go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type;furotypepb
     java_multiple_files: "true"
     java_outer_classname: MoneyProto
     java_package: pro.furo.type
