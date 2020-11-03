@@ -86,3 +86,19 @@ fields:
       repeated: false
       typespecific: null
     constraints: { }
+  display_name:
+    type: string
+    description: String representation of the reference
+    __proto:
+      number: 4
+      oneof: ""
+    __ui: null
+    meta:
+      default: ""
+      hint: ""
+      label: ""
+      options: null
+      readonly: true
+      repeated: false
+      typespecific: null
+    constraints: {}
