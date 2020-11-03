@@ -2,13 +2,13 @@ name: Money
 type: Money
 description: Represents an amount of money with its currency type.
 __proto:
-    package: google.type
+    package: furo.type
     targetfile: money.proto
     imports: []
     options:
-        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type;typepb
+        go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type/money;moneypb
             java_multiple_files: "true"
-            java_outer_classname: TypeProto
+            java_outer_classname: MoneyProto
             java_package: pro.furo.type
             objc_class_prefix: FPB
 fields:

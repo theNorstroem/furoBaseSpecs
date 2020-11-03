@@ -9,7 +9,7 @@ description: |-
    of year, e.g. anniversary date. Related types are [google.type.TimeOfDay][google.type.TimeOfDay]
    and `google.protobuf.Timestamp`.
 __proto:
-  package: google.type
+  package: furo.type
   targetfile: date.proto
   imports: [ ]
   options:
