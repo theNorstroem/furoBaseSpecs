@@ -30,3 +30,4 @@ dist:
     - dist/proto
     - specs
     - README.md
+    - .spectools
