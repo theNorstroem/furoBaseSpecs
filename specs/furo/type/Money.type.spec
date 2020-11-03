@@ -7,10 +7,10 @@ __proto:
   imports: [ ]
   options:
     go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type/money;money
-      java_multiple_files: "true"
-      java_outer_classname: MoneyProto
-      java_package: pro.furo.type
-      objc_class_prefix: FPB
+    java_multiple_files: "true"
+    java_outer_classname: MoneyProto
+    java_package: pro.furo.type
+    objc_class_prefix: FPB
 fields:
   currency_code:
     type: string

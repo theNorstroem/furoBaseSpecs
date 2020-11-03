@@ -27,7 +27,9 @@ const (
 // of the legacy proto package is being used.
 const _ = proto.ProtoPackageIsVersion4
 
-// A BigDecimal is defined by two values: an arbitrary precision integer and a 32-bit integer scale. The value of the BigDecimal is defined to be unscaledValue*10^{-scale}.
+// A BigDecimal is defined by two values: an arbitrary precision integer and a 32-bit integer scale.
+// The value of the BigDecimal is defined to be unscaledValue*10^{-scale}.&#39;
+//
 type BigDecimal struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -35,7 +37,10 @@ type BigDecimal struct {
 
 	// String representation of BigDecimal entity
 	DisplayName string `protobuf:"bytes,1,opt,name=display_name,json=displayName,proto3" json:"display_name,omitempty"`
-	// If zero or positive, the scale is the number of digits to the right of the decimal point. If negative, the unscaled value of the number is multiplied by ten to the power of the negation of the scale. For example, a scale of -3 means the unscaled value is multiplied by 1000.
+	// If zero or positive, the scale is the number of digits to the right of the decimal point.
+	// If negative, the unscaled value of the number is multiplied by ten to the power of the
+	// negation of the scale. For example, a scale of -3 means the unscaled value is multiplied by 1000.
+	//
 	Scale int32 `protobuf:"varint,2,opt,name=scale,proto3" json:"scale,omitempty"`
 	// The integer value of the BigDecimal
 	IntVal int64 `protobuf:"varint,3,opt,name=int_val,json=intVal,proto3" json:"int_val,omitempty"`
