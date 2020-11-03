@@ -10,11 +10,11 @@ description: |-
    and `google.protobuf.Timestamp`.
 __proto:
   package: furo.type
-  targetfile: date.proto
+  targetfile: type.proto
   imports: [ ]
   options:
     cc_enable_arenas: "true"
-    go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type/date;date
+    go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type;typepb
     java_multiple_files: "true"
     java_outer_classname: DateProto
     java_package: pro.furo.type

@@ -3,10 +3,10 @@ type: Money
 description: Represents an amount of money with its currency type.
 __proto:
   package: furo.type
-  targetfile: money.proto
+  targetfile: type.proto
   imports: [ ]
   options:
-    go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type/money;money
+    go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type;typepb
     java_multiple_files: "true"
     java_outer_classname: MoneyProto
     java_package: pro.furo.type
