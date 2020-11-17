@@ -33,7 +33,7 @@ message Bool {
     bool value = 1;
 
     // Labels / flags for the value, something like unspecified, empty, confidential, absent,... Can be used for AI, UI, Business Logic,...
-    repeated bool labels = 2;
+    repeated string labels = 2;
 
     // Attributes for a value, something like confidential-msg: you are not allowed to see this value 
     map<string,string> attributes = 3;
@@ -46,7 +46,7 @@ message Bytes {
     bytes value = 1;
 
     // Labels / flags for the value, something like unspecified, empty, confidential, absent,... Can be used for AI, UI, Business Logic,...
-    repeated bytes labels = 2;
+    repeated string labels = 2;
 
     // Attributes for a value, something like confidential-msg: you are not allowed to see this value 
     map<string,string> attributes = 3;
