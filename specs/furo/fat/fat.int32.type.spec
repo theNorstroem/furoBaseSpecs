@@ -43,7 +43,7 @@ fields:
                 is: −2147483648
                 message: out of range
     labels:
-        type: string
+        type: map<string,bool>
         description: Labels / flags for the value, something like unspecified, empty, confidential, absent,... Can be used for AI, UI, Business Logic,...
         __proto:
             number: 2
