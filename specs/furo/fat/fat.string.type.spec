@@ -15,7 +15,7 @@ __proto:
         objc_class_prefix: FPB
 fields:
     value:
-        type: map<string,bool>
+        type: string
         description: The JSON representation for `StringValue` is a JSON string
         __proto:
             number: 1

@@ -118,7 +118,7 @@ message Int64 {
 message String {  
 
     // The JSON representation for `StringValue` is a JSON string
-    map<string,bool> value = 1;
+    string value = 1;
 
     // Labels / flags for the value, something like unspecified, empty, confidential, absent,... Can be used for AI, UI, Business Logic,...
     map<string,bool> labels = 2;
