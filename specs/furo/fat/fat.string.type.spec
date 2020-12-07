@@ -1,5 +1,5 @@
 name: string
-type: map<string,bool>
+type: String
 description: Furo annotated type wrapper message for `string`.
 __proto:
     package: furo.fat
@@ -55,7 +55,7 @@ fields:
                 flags: []
                 list: []
             readonly: false
-            repeated: true
+            repeated: false
             typespecific: null
         constraints: {}
     attributes:

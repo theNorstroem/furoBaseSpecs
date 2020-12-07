@@ -33,7 +33,7 @@ fields:
                 flags: []
                 list: []
             readonly: false
-            repeated: true
+            repeated: false
             typespecific: null
         constraints: {}
     attributes:
