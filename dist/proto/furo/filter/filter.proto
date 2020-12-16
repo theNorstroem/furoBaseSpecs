@@ -25,7 +25,7 @@ message Condition {
 
     // And bracket with ors inside
 // Nesting means and, siblings means or
-    repeated filter.Condition aoc = 4;
+    repeated furo.filter.Condition aoc = 4;
 }
 
 // Filter root object
@@ -40,5 +40,5 @@ message Filter {
 // - all active conditions *must* match (a && b && c).
 // - all conditions are handled as or (a || b || c).
 // - you build your own logic like (a && b) || c.
-    map<string,filter.Condition> flat = 2;
+    map<string,furo.filter.Condition> flat = 2;
 }

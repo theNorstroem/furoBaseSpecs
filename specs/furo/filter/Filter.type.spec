@@ -23,7 +23,7 @@ fields:
         meta:
             default: ""
             hint: ""
-            label: filter.Filter.clause.label
+            label: ""
             options:
                 flags: []
                 list: []
@@ -32,7 +32,7 @@ fields:
             typespecific: null
         constraints: {}
     flat:
-        type: map<string,filter.Condition>
+        type: map<string,furo.filter.Condition>
         description: |-
             Shortcut to set filter conditions without nesting.
             It is up to you how the server handles the request.
@@ -46,7 +46,7 @@ fields:
         meta:
             default: ""
             hint: ""
-            label: filter.Filter.must.label
+            label: ""
             options:
                 flags: []
                 list: []

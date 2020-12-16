@@ -69,7 +69,7 @@ fields:
             typespecific: null
         constraints: {}
     aoc:
-        type: filter.Condition
+        type: furo.filter.Condition
         description: |-
             And bracket with ors inside
             Nesting means and, siblings means or
