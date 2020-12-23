@@ -35,6 +35,8 @@ fields:
         type: map<string,furo.filter.Condition>
         description: |-
             Shortcut to set filter conditions without nesting.
+            All you get is just a bunch of conditions.
+            Consider to write a custom filter type for your services instead using this.
             It is up to you how the server handles the request.
             Examples for a flat filter a,b,c:
             - all active conditions *must* match (a && b && c).
