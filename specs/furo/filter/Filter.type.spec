@@ -31,28 +31,3 @@ fields:
             repeated: true
             typespecific: null
         constraints: {}
-    flat:
-        type: map<string,furo.filter.Condition>
-        description: |-
-            Shortcut to set filter conditions without nesting.
-            All you get is just a bunch of conditions.
-            Consider to write a custom filter type for your services instead using this.
-            It is up to you how the server handles the request.
-            Examples for a flat filter a,b,c:
-            - all active conditions *must* match (a && b && c).
-            - all conditions are handled as or (a || b || c).
-            - you build your own logic like (a && b) || c.
-        __proto:
-            number: 2
-        __ui: null
-        meta:
-            default: ""
-            hint: ""
-            label: ""
-            options:
-                flags: []
-                list: []
-            readonly: false
-            repeated: false
-            typespecific: null
-        constraints: {}
