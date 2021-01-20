@@ -33,12 +33,4 @@ message Filter {
 
     // Root bracket with ors inside, this is the most complex but most flexible way to define a filter
     repeated filter.Condition clause = 1;
-
-    // Shortcut to set filter conditions without nesting.
-// It is up to you how the server handles the request.
-// Examples for a flat filter a,b,c:
-// - all active conditions *must* match (a && b && c).
-// - all conditions are handled as or (a || b || c).
-// - you build your own logic like (a && b) || c.
-    map<string,furo.filter.Condition> flat = 2;
 }
