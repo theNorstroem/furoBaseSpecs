@@ -19,6 +19,7 @@ fields:
         description: Root bracket with ors inside, this is the most complex but most flexible way to define a filter
         __proto:
             number: 1
+            oneof: ""
         __ui: null
         meta:
             default: ""

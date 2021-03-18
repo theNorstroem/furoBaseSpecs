@@ -17,15 +17,31 @@ __proto:
 fields:
     label:
         type: string
-        description: The label
+        description: Informative text which can be displayed on the ui
         __proto:
             number: 1
             oneof: ""
         __ui: null
         meta:
             default: ""
-            hint: Also used for input-fields
+            hint: Usualy used to label the input field
             label: Label
+            options: null
+            readonly: false
+            repeated: false
+            typespecific: null
+        constraints: {}
+    placeholder:
+        type: string
+        description: Informative text which can be displayed on the ui
+        __proto:
+            number: 7
+            oneof: ""
+        __ui: null
+        meta:
+            default: ""
+            hint: Usualy used as placeholder text on empty elements
+            label: Hint
             options: null
             readonly: false
             repeated: false
@@ -49,7 +65,7 @@ fields:
         constraints: {}
     default:
         type: string
-        description: The default value as JSON string
+        description: The default value as JSON string, this must match with the data structure of your type
         __proto:
             number: 3
             oneof: ""
@@ -65,7 +81,7 @@ fields:
         constraints: {}
     readonly:
         type: bool
-        description: readonly
+        description: Marks the field as readonly. Used for validations.
         __proto:
             number: 4
             oneof: ""

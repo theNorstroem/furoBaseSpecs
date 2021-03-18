@@ -25,16 +25,19 @@ message FieldConstraint {
 // Metas for a field
 message FieldMeta {  
 
-    // The label
+    // Informative text which can be displayed on the ui
     string label = 1;
+
+    // Informative text which can be displayed on the ui
+    string placeholder = 7;
 
     // A hint
     string hint = 2;
 
-    // The default value as JSON string
+    // The default value as JSON string, this must match with the data structure of your type
     string default = 3;
 
-    // readonly
+    // Marks the field as readonly. Used for validations.
     bool readonly = 4;
 
     // repeated
