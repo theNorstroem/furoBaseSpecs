@@ -29,7 +29,7 @@ message FieldMeta {
     string label = 1;
 
     // Informative text which can be displayed on the ui
-    string placeholder = 7;
+    string placeholder = 8;
 
     // A hint
     string hint = 2;

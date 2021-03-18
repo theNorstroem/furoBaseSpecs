@@ -35,7 +35,7 @@ fields:
         type: string
         description: Informative text which can be displayed on the ui
         __proto:
-            number: 7
+            number: 8
             oneof: ""
         __ui: null
         meta:
