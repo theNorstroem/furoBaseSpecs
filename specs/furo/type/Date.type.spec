@@ -16,7 +16,7 @@ __proto:
     cc_enable_arenas: "true"
     go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo/type;furotypepb
     java_multiple_files: "true"
-    java_outer_classname: DateProto
+    java_outer_classname: FuroTypeProto
     java_package: pro.furo.type
     objc_class_prefix: FPB
 fields:
