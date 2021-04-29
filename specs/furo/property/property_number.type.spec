@@ -2,7 +2,7 @@ name: number_property
 type: NumberProperty
 description: Number type with embedded meta
 __proto:
-    package: furo
+    package: furo.property
     targetfile: property.proto
     imports: []
     options:

@@ -2,7 +2,7 @@ name: property
 type: Property
 description: Type to define property values with type information
 __proto:
-    package: furo
+    package: furo.property
     targetfile: property.proto
     imports:
         - google/protobuf/any.proto

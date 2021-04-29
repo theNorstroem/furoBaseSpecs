@@ -2,7 +2,7 @@ name: string_property
 type: StringProperty
 description: String type to use in property
 __proto:
-    package: furo
+    package: furo.property
     targetfile: property.proto
     imports: []
     options:

@@ -2,7 +2,7 @@ name: integer_property
 type: IntegerProperty
 description: Integer type with embedded meta
 __proto:
-    package: furo
+    package: furo.property
     targetfile: property.proto
     imports: []
     options:

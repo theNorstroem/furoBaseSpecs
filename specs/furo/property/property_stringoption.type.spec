@@ -2,7 +2,7 @@ name: string_option_property
 type: StringOptionProperty
 description: String type to use in property
 __proto:
-    package: furo
+    package: furo.property
     targetfile: property.proto
     imports: []
     options:

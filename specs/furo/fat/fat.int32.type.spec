@@ -40,7 +40,7 @@ fields:
                 is: "2147483647"
                 message: out of range
             min:
-                is: −2147483648
+                is: "−2147483648"
                 message: out of range
     labels:
         type: map<string,bool>
