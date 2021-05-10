@@ -35,13 +35,7 @@ fields:
             readonly: false
             repeated: false
             typespecific: null
-        constraints:
-            max:
-                is: "4294967295"
-                message: out of range
-            min:
-                is: "0"
-                message: out of range
+        constraints: {}
     labels:
         type: map<string,bool>
         description: Labels / flags for the value, something like unspecified, empty, confidential, absent,... Can be used for AI, UI, Business Logic,...
