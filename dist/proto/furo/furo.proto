@@ -53,13 +53,13 @@ message FieldMeta {
 // Metas for a field
 message Fieldoption {  
 
-    // a list with options, use furo.optionitem or your own
-    repeated google.protobuf.Any list = 1;
-
     // Add flags for your field. This can be something like "searchable". 
 // //The flags can be used by generators, ui components,...
 // 
     repeated string flags = 2;
+
+    // a list with options, use furo.optionitem or your own
+    repeated google.protobuf.Any list = 1;
 }
 
 // link
