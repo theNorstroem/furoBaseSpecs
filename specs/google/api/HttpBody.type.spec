@@ -40,6 +40,7 @@ description: |-
 
      Use of this type only changes how the request and response bodies are
      handled, all other features will continue to work unchanged.
+lifecycle: null
 __proto:
     package: google.api
     targetfile: httpbody.proto
@@ -58,7 +59,6 @@ fields:
         description: The HTTP Content-Type header value specifying the content type of the body.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -66,6 +66,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.HttpBody.content_type
             options:
@@ -80,7 +81,6 @@ fields:
         description: The HTTP request/response body as raw binary.
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -88,6 +88,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.HttpBody.data
             options:
@@ -104,7 +105,6 @@ fields:
              for streaming APIs.
         __proto:
             number: 3
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -112,6 +112,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.HttpBody.extensions
             options:

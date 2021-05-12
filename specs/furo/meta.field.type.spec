@@ -1,6 +1,7 @@
 name: metafield
 type: MetaField
 description: fields of meta info
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -19,7 +20,6 @@ fields:
         description: meta informatioxn of a field
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -28,7 +28,6 @@ fields:
         description: constraints for a field
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}

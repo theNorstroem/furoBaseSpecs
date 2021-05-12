@@ -17,6 +17,7 @@ description: |-
            # allowed to proceed.
          - name: library-example.googleapis.com
            allow_cors: true
+lifecycle: null
 __proto:
     package: google.api
     targetfile: endpoint.proto
@@ -33,7 +34,6 @@ fields:
         description: The canonical name of this endpoint.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -41,6 +41,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Endpoint.name
             options:
@@ -60,7 +61,6 @@ fields:
              Additional names that this endpoint will be hosted on.
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -68,6 +68,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Endpoint.aliases
             options:
@@ -87,7 +88,6 @@ fields:
              "8.8.8.8" or "myservice.appspot.com".
         __proto:
             number: 101
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -95,6 +95,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Endpoint.target
             options:
@@ -115,7 +116,6 @@ fields:
              allowed to proceed.
         __proto:
             number: 5
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -123,6 +123,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Endpoint.allow_cors
             options:

@@ -4,6 +4,7 @@ description: |-
     Wrapper message for `int64`.
 
      The JSON representation for `Int64Value` is JSON string.
+lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -22,7 +23,6 @@ fields:
         description: The int64 value.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -30,6 +30,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Int64Value.value
             options:

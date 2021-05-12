@@ -19,6 +19,7 @@ description: |-
      Please note that even though each of the canonical scopes is enough for a
      request to be accepted and passed to the backend, a request can still fail
      due to the backend requiring additional scopes or permissions.
+lifecycle: null
 __proto:
     package: google.api
     targetfile: auth.proto
@@ -42,7 +43,6 @@ fields:
                                     https://www.googleapis.com/auth/calendar.read
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -50,6 +50,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.OAuthRequirements.canonical_scopes
             options:

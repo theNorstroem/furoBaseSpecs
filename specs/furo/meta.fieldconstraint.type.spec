@@ -1,6 +1,7 @@
 name: fieldconstraint
 type: FieldConstraint
 description: a single fieldconstraint
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -19,10 +20,10 @@ fields:
         description: the constraint value as string, even it is a number
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: the constraint value as string, even it is a number
             label: is
             options: null
@@ -35,10 +36,10 @@ fields:
         description: The message to display on constraint violation
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: message
             options: null

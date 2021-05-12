@@ -4,6 +4,7 @@ description: |-
     Defines the HTTP configuration for an API service. It contains a list of
      [HttpRule][google.api.HttpRule], each specifying the mapping of an RPC method
      to one or more HTTP REST API methods.
+lifecycle: null
 __proto:
     package: google.api
     targetfile: http.proto
@@ -24,7 +25,6 @@ fields:
              **NOTE:** All service configuration rules follow "last one wins" order.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -32,6 +32,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Http.rules
             options:
@@ -52,7 +53,6 @@ fields:
              segment matches.
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -60,6 +60,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Http.fully_decode_reserved_expansion
             options:

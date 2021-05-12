@@ -1,6 +1,7 @@
 name: optionitem
 type: Optionitem
 description: Items for fieldoption.list
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -19,7 +20,6 @@ fields:
         description: Id
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -27,6 +27,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: Id
             options:
@@ -41,7 +42,6 @@ fields:
         description: String representation
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -49,6 +49,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: Display name
             options:
@@ -63,7 +64,6 @@ fields:
         description: is the item selected
         __proto:
             number: 3
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -71,6 +71,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: Selected
             options:

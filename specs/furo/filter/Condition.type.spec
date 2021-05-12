@@ -1,6 +1,7 @@
 name: Condition
 type: Condition
 description: Filter condition
+lifecycle: null
 __proto:
     package: furo.filter
     targetfile: filter.proto
@@ -19,10 +20,10 @@ fields:
         description: Field
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:
@@ -40,10 +41,10 @@ fields:
         description: The comparator like gt, eq,...
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:
@@ -58,10 +59,10 @@ fields:
         description: The value as string, parse and convert this for your field
         __proto:
             number: 3
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:
@@ -78,10 +79,10 @@ fields:
             Nesting means and, siblings means or
         __proto:
             number: 4
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:

@@ -3,6 +3,7 @@ type: BigDecimal
 description: |
     A BigDecimal is defined by two values: an arbitrary precision integer and a 32-bit integer scale.
     The value of the BigDecimal is defined to be unscaledValue*10^{-scale}.'
+lifecycle: null
 __proto:
     package: furo
     targetfile: bigdecimal.proto
@@ -21,10 +22,10 @@ fields:
         description: String representation of BigDecimal entity
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options: null
@@ -40,10 +41,10 @@ fields:
             negation of the scale. For example, a scale of -3 means the unscaled value is multiplied by 1000.
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options: null
@@ -56,10 +57,10 @@ fields:
         description: The integer value of the BigDecimal
         __proto:
             number: 3
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options: null

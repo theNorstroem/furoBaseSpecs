@@ -9,6 +9,7 @@ description: |-
      with the proto support for the language.
 
      The JSON representation for `Struct` is JSON object.
+lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: struct.proto
@@ -27,7 +28,6 @@ fields:
         description: Unordered map of dynamically typed values.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -35,6 +35,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Struct.fields
             options:

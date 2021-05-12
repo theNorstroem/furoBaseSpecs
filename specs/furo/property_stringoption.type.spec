@@ -1,6 +1,7 @@
 name: string_option_property
 type: StringOptionProperty
 description: String type to use in property
+lifecycle: null
 __proto:
     package: furo
     targetfile: property.proto
@@ -19,10 +20,10 @@ fields:
         description: String representation of val
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options: null
@@ -35,7 +36,6 @@ fields:
         description: The value, Id is used to make working with data-inputs easier
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}

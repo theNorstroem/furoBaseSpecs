@@ -1,6 +1,7 @@
 name: fieldoption
 type: Fieldoption
 description: Metas for a field
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -20,7 +21,6 @@ fields:
         description: "Add flags for your field. This can be something like \"searchable\". \n//The flags can be used by generators, ui components,...\n"
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -28,6 +28,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: optional flags
             label: flags
             options:
@@ -42,7 +43,6 @@ fields:
         description: a list with options, use furo.optionitem or your own
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags:
@@ -52,6 +52,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:

@@ -1,6 +1,7 @@
 name: fieldmeta
 type: FieldMeta
 description: Metas for a field
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -20,26 +21,26 @@ fields:
         description: The default value as JSON string, this must match with the data structure of your type
         __proto:
             number: 3
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: Default value
             options: null
             readonly: false
             repeated: false
             typespecific: null
-        constraints: { }
+        constraints: {}
     placeholder:
         type: string
         description: Informative text which can be displayed on the ui
         __proto:
             number: 8
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: Usualy used as placeholder text on empty elements
             label: Hint
             options: null
@@ -52,10 +53,10 @@ fields:
         description: A hint
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: Also used for input-fields
             label: Hint
             options: null
@@ -68,10 +69,10 @@ fields:
         description: Informative text which can be displayed on the ui
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: Usualy used to label the input field
             label: Label
             options: null
@@ -84,10 +85,10 @@ fields:
         description: Fieldoptions
         __proto:
             number: 6
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: options
             options: null
@@ -100,10 +101,10 @@ fields:
         description: Marks the field as readonly. Used for validations.
         __proto:
             number: 4
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: readonly
             options: null
@@ -116,10 +117,10 @@ fields:
         description: repeated
         __proto:
             number: 5
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: repeated
             options: null
@@ -132,7 +133,6 @@ fields:
         description: Put in type specific metas for your fields here
         __proto:
             number: 7
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -140,6 +140,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: typespecific meta
             options: null

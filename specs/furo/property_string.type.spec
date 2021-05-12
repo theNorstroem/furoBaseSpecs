@@ -1,6 +1,7 @@
 name: string_property
 type: StringProperty
 description: String type to use in property
+lifecycle: null
 __proto:
     package: furo
     targetfile: property.proto
@@ -19,7 +20,6 @@ fields:
         description: data part
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}

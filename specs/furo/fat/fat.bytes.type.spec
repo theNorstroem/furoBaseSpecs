@@ -1,6 +1,7 @@
 name: bytes
 type: Bytes
 description: Furo annotated type wrapper message for `bytes`.
+lifecycle: null
 __proto:
     package: furo.fat
     targetfile: fat.proto
@@ -19,7 +20,6 @@ fields:
         description: The JSON representation for `BytesValue` is a JSON string
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -27,6 +27,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:
@@ -41,7 +42,6 @@ fields:
         description: Labels / flags for the value, something like unspecified, empty, confidential, absent,... Can be used for AI, UI, Business Logic,...
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -49,6 +49,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:
@@ -63,7 +64,6 @@ fields:
         description: 'Attributes for a value, something like confidential-msg: you are not allowed to see this value '
         __proto:
             number: 3
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -71,6 +71,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:

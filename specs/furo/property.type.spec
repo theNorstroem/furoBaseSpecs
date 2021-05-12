@@ -1,12 +1,13 @@
 name: property
 type: Property
 description: Type to define property values with type information
+lifecycle: null
 __proto:
     package: furo
     targetfile: property.proto
     imports:
-        - google/protobuf/any.proto
         - furo/furo.proto
+        - google/protobuf/any.proto
     options:
         cc_enable_arenas: "true"
         csharp_namespace: Furo.Property
@@ -21,10 +22,10 @@ fields:
         description: Id of the property
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: Id
             options: null
@@ -40,10 +41,10 @@ fields:
         description: String representation of the property
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: Property
             options: null
@@ -56,7 +57,6 @@ fields:
         description: data part of the property
         __proto:
             number: 3
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -65,7 +65,6 @@ fields:
         description: Meta for the response
         __proto:
             number: 4
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -74,7 +73,6 @@ fields:
         description: property code for additional settings
         __proto:
             number: 5
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -83,10 +81,10 @@ fields:
         description: Optional attribute flags e.g. is-overwritable
         __proto:
             number: 6
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options: null
@@ -99,10 +97,10 @@ fields:
         description: Optional flag indicating that the property differs from the original value
         __proto:
             number: 7
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options: null

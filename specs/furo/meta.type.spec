@@ -1,6 +1,7 @@
 name: meta
 type: Meta
 description: meta info
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -19,7 +20,6 @@ fields:
         description: fields of meta info
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}

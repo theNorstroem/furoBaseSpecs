@@ -1,6 +1,7 @@
 name: Backend
 type: Backend
 description: '`Backend` defines the backend configuration for a service.'
+lifecycle: null
 __proto:
     package: google.api
     targetfile: backend.proto
@@ -20,7 +21,6 @@ fields:
              **NOTE:** All service configuration rules follow "last one wins" order.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -28,6 +28,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Backend.rules
             options:

@@ -4,6 +4,7 @@ description: |-
     Represents a time of day. The date and time zone are either not significant
      or are specified elsewhere. An API may chose to allow leap seconds. Related
      types are [google.type.Date][google.type.Date] and `google.protobuf.Timestamp`.
+lifecycle: null
 __proto:
     package: google.type
     targetfile: timeofday.proto
@@ -22,7 +23,6 @@ fields:
              to allow the value "24:00:00" for scenarios like business closing time.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -30,6 +30,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.TimeOfDay.hours
             options:
@@ -44,7 +45,6 @@ fields:
         description: Minutes of hour of day. Must be from 0 to 59.
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -52,6 +52,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.TimeOfDay.minutes
             options:
@@ -68,7 +69,6 @@ fields:
              allow the value 60 if it allows leap-seconds.
         __proto:
             number: 3
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -76,6 +76,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.TimeOfDay.seconds
             options:
@@ -90,7 +91,6 @@ fields:
         description: Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
         __proto:
             number: 4
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -98,6 +98,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.TimeOfDay.nanos
             options:

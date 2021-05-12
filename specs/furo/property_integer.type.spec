@@ -1,6 +1,7 @@
 name: integer_property
 type: IntegerProperty
 description: Integer type with embedded meta
+lifecycle: null
 __proto:
     package: furo
     targetfile: property.proto
@@ -19,7 +20,6 @@ fields:
         description: Integer data part
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta: null
         constraints:

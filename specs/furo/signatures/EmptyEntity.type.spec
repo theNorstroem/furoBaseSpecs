@@ -4,6 +4,7 @@ description: |
     Entitycontainer which holds a empty entity. So links and meta is all you can send.
     Use this as a create response to send propper HATEOAS back to the client without the need
     to send the complete object.
+lifecycle: null
 __proto:
     package: furo.signatures
     targetfile: signatures.proto
@@ -23,10 +24,10 @@ fields:
         description: the Hateoas links
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: furo.signatures.EmptyEntity.links.label
             options:
@@ -41,10 +42,10 @@ fields:
         description: Meta for the response
         __proto:
             number: 3
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: furo.signatures.EmptyEntity.meta.label
             options:

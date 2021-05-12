@@ -1,6 +1,7 @@
 name: link
 type: Link
 description: link
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -19,7 +20,6 @@ fields:
         description: the relationship like self...
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -28,7 +28,6 @@ fields:
         description: method of curl v1.0.0
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -37,7 +36,6 @@ fields:
         description: link
         __proto:
             number: 3
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -46,7 +44,6 @@ fields:
         description: mime type
         __proto:
             number: 4
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -55,7 +52,6 @@ fields:
         description: name of the service which can handle this link
         __proto:
             number: 5
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}

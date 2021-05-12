@@ -1,6 +1,7 @@
 name: Filter
 type: Filter
 description: Filter root object
+lifecycle: null
 __proto:
     package: furo.filter
     targetfile: filter.proto
@@ -19,10 +20,10 @@ fields:
         description: Root bracket with ors inside, this is the most complex but most flexible way to define a filter
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options:

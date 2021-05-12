@@ -4,6 +4,7 @@ description: |-
     User-defined authentication requirements, including support for
      [JSON Web Token
      (JWT)](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32).
+lifecycle: null
 __proto:
     package: google.api
     targetfile: auth.proto
@@ -25,7 +26,6 @@ fields:
                  provider_id: bookstore_auth
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -33,6 +33,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.AuthRequirement.provider_id
             options:
@@ -63,7 +64,6 @@ fields:
                             bookstore_web.apps.googleusercontent.com
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -71,6 +71,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.AuthRequirement.audiences
             options:

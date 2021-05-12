@@ -56,6 +56,7 @@ description: |-
      <pre><code>&#40;== resource_for v1.shelves.books ==&#41;</code></pre>
      The directive `suppress_warning` does not directly affect documentation
      and is documented together with service config validation.
+lifecycle: null
 __proto:
     package: google.api
     targetfile: documentation.proto
@@ -74,7 +75,6 @@ fields:
              plain text.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -82,6 +82,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Documentation.summary
             options:
@@ -96,7 +97,6 @@ fields:
         description: The top level pages for the documentation set.
         __proto:
             number: 5
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -104,6 +104,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Documentation.pages
             options:
@@ -121,7 +122,6 @@ fields:
              **NOTE:** All service configuration rules follow "last one wins" order.
         __proto:
             number: 3
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -129,6 +129,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Documentation.rules
             options:
@@ -143,7 +144,6 @@ fields:
         description: The URL to the root of documentation.
         __proto:
             number: 4
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -151,6 +151,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Documentation.documentation_root_url
             options:
@@ -169,7 +170,6 @@ fields:
              urls are relative to.
         __proto:
             number: 6
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -177,6 +177,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Documentation.service_root_url
             options:
@@ -204,7 +205,6 @@ fields:
              Note: you cannot specify both `overview` field and `pages` field.
         __proto:
             number: 2
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -212,6 +212,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Documentation.overview
             options:

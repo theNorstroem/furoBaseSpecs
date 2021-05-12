@@ -4,6 +4,7 @@ description: |-
     Wrapper message for `uint32`.
 
      The JSON representation for `UInt32Value` is JSON number.
+lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -22,7 +23,6 @@ fields:
         description: The uint32 value.
         __proto:
             number: 1
-            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -30,6 +30,7 @@ fields:
             noskip: false
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.UInt32Value.value
             options:

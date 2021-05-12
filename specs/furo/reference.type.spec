@@ -1,6 +1,7 @@
 name: reference
 type: Reference
 description: reference
+lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
@@ -19,10 +20,10 @@ fields:
         description: String representation of the reference
         __proto:
             number: 1
-            oneof: ""
         __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: ""
             options: null
@@ -35,7 +36,6 @@ fields:
         description: Id of the reference
         __proto:
             number: 2
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
@@ -44,7 +44,6 @@ fields:
         description: Hateoas link
         __proto:
             number: 3
-            oneof: ""
         __ui: null
         meta: null
         constraints: {}
