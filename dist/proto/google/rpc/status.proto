@@ -2,7 +2,7 @@
 syntax = "proto3";
 package google.rpc;
 option cc_enable_arenas = true;
-option go_package = "google.golang.org/grpc/status;status";
+option go_package = "google.golang.org/genproto/googleapis/rpc/status;status";
 option java_multiple_files = true;
 option java_outer_classname = "StatusProto";
 option java_package = "com.google.rpc";
