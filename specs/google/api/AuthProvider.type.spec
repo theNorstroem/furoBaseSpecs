@@ -4,7 +4,6 @@ description: |-
     Configuration for an authentication provider, including support for
      [JSON Web Token
      (JWT)](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32).
-lifecycle: null
 __proto:
     package: google.api
     targetfile: auth.proto
@@ -25,6 +24,7 @@ fields:
              Example: "bookstore_auth".
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -32,7 +32,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthProvider.id
             options:
@@ -53,6 +52,7 @@ fields:
              Example: 1234567-compute@developer.gserviceaccount.com
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -60,7 +60,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthProvider.issuer
             options:
@@ -87,6 +86,7 @@ fields:
              Example: https://www.googleapis.com/oauth2/v1/certs
         __proto:
             number: 3
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -94,7 +94,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthProvider.jwks_uri
             options:
@@ -126,6 +125,7 @@ fields:
                             bookstore_web.apps.googleusercontent.com
         __proto:
             number: 4
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -133,7 +133,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthProvider.audiences
             options:
@@ -150,6 +149,7 @@ fields:
              Implement authorizationUrl of securityDefinitions in OpenAPI spec.
         __proto:
             number: 5
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -157,7 +157,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthProvider.authorization_url
             options:
@@ -189,6 +188,7 @@ fields:
                 - query: access_token
         __proto:
             number: 6
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -196,7 +196,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthProvider.jwt_locations
             options:

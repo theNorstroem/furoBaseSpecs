@@ -1,7 +1,6 @@
 name: DocumentationRule
 type: DocumentationRule
 description: A documentation rule provides information about individual API elements.
-lifecycle: null
 __proto:
     package: google.api
     targetfile: documentation.proto
@@ -24,6 +23,7 @@ fields:
              applicable elements, the whole pattern "*" is used.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -31,7 +31,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.DocumentationRule.selector
             options:
@@ -46,6 +45,7 @@ fields:
         description: Description of the selected API(s).
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -53,7 +53,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.DocumentationRule.description
             options:
@@ -70,6 +69,7 @@ fields:
              an element is marked as `deprecated`.
         __proto:
             number: 3
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -77,7 +77,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.DocumentationRule.deprecation_description
             options:

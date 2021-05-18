@@ -18,7 +18,6 @@ description: |-
 
      For more guidance on how to use this schema, please see:
      https://support.google.com/business/answer/6397478
-lifecycle: null
 __proto:
     package: google.type
     targetfile: postal_address.proto
@@ -37,6 +36,7 @@ fields:
              All new revisions **must** be backward compatible with old revisions.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -44,7 +44,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.revision
             options:
@@ -64,6 +63,7 @@ fields:
              for details. Example: "CH" for Switzerland.
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -71,7 +71,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.region_code
             options:
@@ -98,6 +97,7 @@ fields:
              Examples: "zh-Hant", "ja", "ja-Latn", "en".
         __proto:
             number: 3
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -105,7 +105,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.language_code
             options:
@@ -124,6 +123,7 @@ fields:
              validation in the U.S.A.).
         __proto:
             number: 4
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -131,7 +131,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.postal_code
             options:
@@ -151,6 +150,7 @@ fields:
              (Malawi) or "post office indicator" (e.g. Côte d'Ivoire).
         __proto:
             number: 5
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -158,7 +158,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.sorting_code
             options:
@@ -180,6 +179,7 @@ fields:
              in Switzerland this should be left unpopulated.
         __proto:
             number: 6
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -187,7 +187,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.administrative_area
             options:
@@ -206,6 +205,7 @@ fields:
              into this structure well, leave locality empty and use address_lines.
         __proto:
             number: 7
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -213,7 +213,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.locality
             options:
@@ -230,6 +229,7 @@ fields:
              For example, this can be neighborhoods, boroughs, districts.
         __proto:
             number: 8
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -237,7 +237,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.sublocality
             options:
@@ -274,6 +273,7 @@ fields:
              localities or administrative areas).
         __proto:
             number: 9
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -281,7 +281,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.address_lines
             options:
@@ -299,6 +298,7 @@ fields:
              For example, it might contain "care of" information.
         __proto:
             number: 10
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -306,7 +306,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.recipients
             options:
@@ -321,6 +320,7 @@ fields:
         description: Optional. The name of the organization at the address.
         __proto:
             number: 11
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -328,7 +328,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.PostalAddress.organization
             options:

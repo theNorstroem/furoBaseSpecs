@@ -4,7 +4,6 @@ description: |-
     Wrapper message for `int32`.
 
      The JSON representation for `Int32Value` is JSON number.
-lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -23,6 +22,7 @@ fields:
         description: The int32 value.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -30,7 +30,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.Int32Value.value
             options:

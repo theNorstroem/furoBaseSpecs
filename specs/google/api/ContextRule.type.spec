@@ -3,7 +3,6 @@ type: ContextRule
 description: |-
     A context rule provides information about the context for an individual API
      element.
-lifecycle: null
 __proto:
     package: google.api
     targetfile: context.proto
@@ -23,6 +22,7 @@ fields:
              Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -30,7 +30,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ContextRule.selector
             options:
@@ -45,6 +44,7 @@ fields:
         description: A list of full type names of requested contexts.
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -52,7 +52,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ContextRule.requested
             options:
@@ -67,6 +66,7 @@ fields:
         description: A list of full type names of provided contexts.
         __proto:
             number: 3
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -74,7 +74,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ContextRule.provided
             options:
@@ -91,6 +90,7 @@ fields:
              side channel from client to backend.
         __proto:
             number: 4
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -98,7 +98,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ContextRule.allowed_request_extensions
             options:
@@ -115,6 +114,7 @@ fields:
              side channel from backend to client.
         __proto:
             number: 5
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -122,7 +122,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ContextRule.allowed_response_extensions
             options:

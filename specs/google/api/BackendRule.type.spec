@@ -1,7 +1,6 @@
 name: BackendRule
 type: BackendRule
 description: A backend rule provides configuration for an individual API element.
-lifecycle: null
 __proto:
     package: google.api
     targetfile: backend.proto
@@ -21,6 +20,7 @@ fields:
              Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -28,7 +28,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.selector
             options:
@@ -63,6 +62,7 @@ fields:
              to specify the protocol version.
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -70,7 +70,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.address
             options:
@@ -87,6 +86,7 @@ fields:
              varies based on the request protocol and deployment environment.
         __proto:
             number: 3
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -94,7 +94,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.deadline
             options:
@@ -111,6 +110,7 @@ fields:
              value lower than this will be rejected.
         __proto:
             number: 4
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -118,7 +118,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.min_deadline
             options:
@@ -135,6 +134,7 @@ fields:
              operation. The default is no deadline.
         __proto:
             number: 5
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -142,7 +142,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.operation_deadline
             options:
@@ -157,6 +156,7 @@ fields:
         description: ""
         __proto:
             number: 6
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -164,7 +164,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.path_translation
             options:
@@ -182,6 +181,7 @@ fields:
              to the backend.
         __proto:
             number: 7
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -189,7 +189,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.jwt_audience
             options:
@@ -208,6 +207,7 @@ fields:
              field must be set to true to preserve the header.
         __proto:
             number: 8
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -215,7 +215,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.disable_auth
             options:
@@ -251,6 +250,7 @@ fields:
              for more details on the supported values.
         __proto:
             number: 9
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -258,7 +258,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BackendRule.protocol
             options:

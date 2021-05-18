@@ -7,7 +7,6 @@ description: |-
      Includes detailed information about a field that have changed with
      applicable advice about potential consequences for the change, such as
      backwards-incompatibility.
-lifecycle: null
 __proto:
     package: google.api
     targetfile: config_change.proto
@@ -33,6 +32,7 @@ fields:
              - logging.producer_destinations[0]
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -40,7 +40,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ConfigChange.element
             options:
@@ -57,6 +56,7 @@ fields:
              in JSON format. This field will not be populated if ChangeType == ADDED.
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -64,7 +64,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ConfigChange.old_value
             options:
@@ -81,6 +80,7 @@ fields:
              in JSON format. This field will not be populated if ChangeType == REMOVED.
         __proto:
             number: 3
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -88,7 +88,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ConfigChange.new_value
             options:
@@ -103,6 +102,7 @@ fields:
         description: The type for this change, either ADDED, REMOVED, or MODIFIED.
         __proto:
             number: 4
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -110,7 +110,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ConfigChange.change_type
             options:
@@ -127,6 +126,7 @@ fields:
              possible impact of this change.
         __proto:
             number: 5
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -134,7 +134,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.ConfigChange.advices
             options:

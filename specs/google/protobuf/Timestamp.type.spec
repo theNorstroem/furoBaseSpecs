@@ -93,7 +93,6 @@ description: |+
      http://www.joda.org/joda-time/apidocs/org/joda/time/format/ISODateTimeFormat.html#dateTime%2D%2D
      ) to obtain a formatter capable of generating timestamps in this format.
 
-lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: timestamp.proto
@@ -115,6 +114,7 @@ fields:
              9999-12-31T23:59:59Z inclusive.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -122,7 +122,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.Timestamp.seconds
             options:
@@ -141,6 +140,7 @@ fields:
              inclusive.
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -148,7 +148,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.Timestamp.nanos
             options:

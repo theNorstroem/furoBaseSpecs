@@ -3,7 +3,6 @@ type: Page
 description: |-
     Represents a documentation page. A page can contain subpages to represent
      nested documentation set structure.
-lifecycle: null
 __proto:
     package: google.api
     targetfile: documentation.proto
@@ -34,6 +33,7 @@ fields:
              `[Java][Tutorial.Java]`.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -41,7 +41,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.Page.name
             options:
@@ -58,6 +57,7 @@ fields:
              ==&#41;</code> to include content from a Markdown file.
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -65,7 +65,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.Page.content
             options:
@@ -82,6 +81,7 @@ fields:
              honored in the generated docset.
         __proto:
             number: 3
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -89,7 +89,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.Page.subpages
             options:

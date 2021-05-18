@@ -4,7 +4,6 @@ description: |-
     Wrapper message for `bool`.
 
      The JSON representation for `BoolValue` is JSON `true` and `false`.
-lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: wrappers.proto
@@ -23,6 +22,7 @@ fields:
         description: The bool value.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -30,7 +30,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.BoolValue.value
             options:

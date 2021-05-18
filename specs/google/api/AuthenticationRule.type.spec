@@ -10,7 +10,6 @@ description: |-
 
      If a method doesn't have any auth requirements, request credentials will be
      ignored.
-lifecycle: null
 __proto:
     package: google.api
     targetfile: auth.proto
@@ -30,6 +29,7 @@ fields:
              Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
         __proto:
             number: 1
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -37,7 +37,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthenticationRule.selector
             options:
@@ -52,6 +51,7 @@ fields:
         description: The requirements for OAuth credentials.
         __proto:
             number: 2
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -59,7 +59,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthenticationRule.oauth
             options:
@@ -76,6 +75,7 @@ fields:
              This flag only applies to HTTP and gRPC requests.
         __proto:
             number: 5
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -83,7 +83,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthenticationRule.allow_without_credential
             options:
@@ -98,6 +97,7 @@ fields:
         description: Requirements for additional authentication providers.
         __proto:
             number: 7
+            oneof: ""
         __ui:
             component: ""
             flags: []
@@ -105,7 +105,6 @@ fields:
             noskip: false
         meta:
             default: ""
-            placeholder: ""
             hint: ""
             label: label.AuthenticationRule.requirements
             options:
