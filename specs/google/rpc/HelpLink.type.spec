@@ -1,12 +1,12 @@
-name: FieldViolation
-type: FieldViolation
+name: Link
+type: Link
 description: |-
-    Describes violations in a client request. This error type focuses on the
-     syntactic aspects of the request.
+    Describes a URL link.
 __proto:
-    package: google.rpc.BadRequest
+    package: google.rpc.Help
     targetfile: error_details.proto
-    imports: null
+    imports:
+        - google/protobuf/duration.proto
     options:
         go_package: google.golang.org/genproto/googleapis/rpc/errdetails;errdetails
         java_multiple_files: "true"
@@ -14,12 +14,9 @@ __proto:
         java_package: com.google.rpc
         objc_class_prefix: RPC
 fields:
-    field:
-        type: String
-        description: |
-            A path leading to a field in the request body. The value will be a
-            sequence of dot-separated identifiers that identify a protocol buffer
-            field. E.g., "field_violations.field" would identify this field.
+    description:
+        type: string
+        description: Describes what the link offers.
         __proto:
             number: 1
             oneof: ""
@@ -31,7 +28,7 @@ fields:
         meta:
             default: ""
             hint: ""
-            label: ""
+            label: label.Help.links
             options:
                 flags: []
                 list: []
@@ -39,10 +36,9 @@ fields:
             repeated: false
             typespecific: null
         constraints: {}
-    description:
-        type: String
-        description: |
-            A description of why the request element is bad.
+    url:
+        type: string
+        description: The URL of the link.
         __proto:
             number: 2
             oneof: ""
@@ -54,7 +50,7 @@ fields:
         meta:
             default: ""
             hint: ""
-            label: ""
+            label: label.Help.links
             options:
                 flags: []
                 list: []
