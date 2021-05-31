@@ -15,7 +15,7 @@ __proto:
         objc_class_prefix: RPC
 fields:
     field:
-        type: String
+        type: string
         description: |
             A path leading to a field in the request body. The value will be a
             sequence of dot-separated identifiers that identify a protocol buffer
@@ -40,7 +40,7 @@ fields:
             typespecific: null
         constraints: {}
     description:
-        type: String
+        type: string
         description: |
             A description of why the request element is bad.
         __proto:
