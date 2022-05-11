@@ -10,6 +10,7 @@ description: |
      Different APIs can support different monitored resource types. APIs generally
      provide a `list` method that returns the monitored resource descriptors used
      by the API.
+lifecycle: null
 __proto:
     package: google.api
     targetfile: monitored_resource.proto
@@ -36,14 +37,10 @@ fields:
              resource name format `"monitoredResourceDescriptors/{type}"`.
         __proto:
             number: 5
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.MonitoredResourceDescriptor.name
             options:
@@ -60,14 +57,10 @@ fields:
              `"cloudsql_database"` represents databases in Google Cloud SQL.
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.MonitoredResourceDescriptor.type
             options:
@@ -86,14 +79,10 @@ fields:
              `"Google Cloud SQL Database"`.
         __proto:
             number: 2
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.MonitoredResourceDescriptor.display_name
             options:
@@ -110,14 +99,10 @@ fields:
              be used in documentation.
         __proto:
             number: 3
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.MonitoredResourceDescriptor.description
             options:
@@ -135,14 +120,10 @@ fields:
              identified by values for the labels `"database_id"` and `"zone"`.
         __proto:
             number: 4
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.MonitoredResourceDescriptor.labels
             options:
@@ -157,14 +138,10 @@ fields:
         description: Optional. The launch stage of the monitored resource definition.
         __proto:
             number: 7
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.MonitoredResourceDescriptor.launch_stage
             options:

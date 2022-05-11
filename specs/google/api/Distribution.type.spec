@@ -15,6 +15,7 @@ description: |-
      Although it is not forbidden, it is generally a bad idea to include
      non-finite values (infinities or NaNs) in the population of values, as this
      will render the `mean` and `sum_of_squared_deviation` fields meaningless.
+lifecycle: null
 __proto:
     package: google.api
     targetfile: distribution.proto
@@ -36,14 +37,10 @@ fields:
              provided.
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Distribution.count
             options:
@@ -60,14 +57,10 @@ fields:
              then this field must be zero.
         __proto:
             number: 2
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Distribution.mean
             options:
@@ -91,14 +84,10 @@ fields:
              If `count` is zero then this field must be zero.
         __proto:
             number: 3
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Distribution.sum_of_squared_deviation
             options:
@@ -115,14 +104,10 @@ fields:
              must not be present if the `count` is zero.
         __proto:
             number: 4
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Distribution.range
             options:
@@ -139,14 +124,10 @@ fields:
              contain a histogram, then omit this field.
         __proto:
             number: 6
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Distribution.bucket_options
             options:
@@ -176,14 +157,10 @@ fields:
              `bucket_counts` is the count for the overflow bucket (number N-1).
         __proto:
             number: 7
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Distribution.bucket_counts
             options:
@@ -198,14 +175,10 @@ fields:
         description: Must be in increasing order of `value` field.
         __proto:
             number: 10
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Distribution.exemplars
             options:

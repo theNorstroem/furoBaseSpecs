@@ -53,6 +53,7 @@ description: |-
              metrics:
              - library.googleapis.com/book/returned_count
              - library.googleapis.com/book/num_overdue
+lifecycle: null
 __proto:
     package: google.api
     targetfile: monitoring.proto
@@ -75,14 +76,10 @@ fields:
              in the Monitoring configuration.
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Monitoring.producer_destinations
             options:
@@ -103,14 +100,10 @@ fields:
              in the Monitoring configuration.
         __proto:
             number: 2
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Monitoring.consumer_destinations
             options:

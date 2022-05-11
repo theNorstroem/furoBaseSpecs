@@ -6,6 +6,7 @@ description: |-
      For example, if an RPC failed because it required the Terms of Service to be
      acknowledged, it could list the terms of service violation in the
      PreconditionFailure message.
+lifecycle: null
 __proto:
     package: google.rpc
     targetfile: error_details.proto
@@ -23,14 +24,10 @@ fields:
         description: Describes all precondition violations.
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.PreconditionFailure.violations
             options:

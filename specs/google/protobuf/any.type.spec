@@ -83,6 +83,7 @@ description: |
            "@type": "type.googleapis.com/google.protobuf.Duration",
            "value": "1.212s"
          }
+lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: any.proto
@@ -127,14 +128,10 @@ fields:
              used with implementation specific semantics.
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Any.type_url
             options:
@@ -149,14 +146,10 @@ fields:
         description: Must be a valid serialized protocol buffer of the above specified type.
         __proto:
             number: 2
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Any.value
             options:

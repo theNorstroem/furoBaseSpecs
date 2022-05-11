@@ -25,6 +25,7 @@ description: |-
              "availableRegions": "us-central1,us-east2"
            }
          }
+lifecycle: null
 __proto:
     package: google.rpc
     targetfile: error_details.proto
@@ -46,14 +47,10 @@ fields:
              /[A-Z0-9_]+/.
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.ErrorInfo.reason
             options:
@@ -74,14 +71,10 @@ fields:
              infrastructure, the error domain is "googleapis.com".
         __proto:
             number: 2
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.ErrorInfo.domain
             options:
@@ -104,14 +97,10 @@ fields:
              instances that can be created in a single (batch) request.
         __proto:
             number: 3
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.ErrorInfo.metadata
             options:

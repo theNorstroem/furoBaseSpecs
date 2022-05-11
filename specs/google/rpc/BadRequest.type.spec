@@ -3,6 +3,7 @@ type: BadRequest
 description: |-
     Describes violations in a client request. This error type focuses on the
      syntactic aspects of the request.
+lifecycle: null
 __proto:
     package: google.rpc
     targetfile: error_details.proto
@@ -20,14 +21,10 @@ fields:
         description: Describes all violations in a client request.
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.BadRequest.field_violations
             options:

@@ -60,6 +60,7 @@ description: |+
      be expressed in JSON format as "3.000000001s", and 3 seconds and 1
      microsecond should be expressed in JSON format as "3.000001s".
 
+lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: duration.proto
@@ -81,14 +82,10 @@ fields:
              60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
         __proto:
             number: 1
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Duration.seconds
             options:
@@ -109,14 +106,10 @@ fields:
              to +999,999,999 inclusive.
         __proto:
             number: 2
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Duration.nanos
             options:

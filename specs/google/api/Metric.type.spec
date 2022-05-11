@@ -3,6 +3,7 @@ type: Metric
 description: |-
     A specific metric, identified by specifying values for all of the
      labels of a [`MetricDescriptor`][google.api.MetricDescriptor].
+lifecycle: null
 __proto:
     package: google.api
     targetfile: metric.proto
@@ -24,14 +25,10 @@ fields:
              For example, `custom.googleapis.com/invoice/paid/amount`.
         __proto:
             number: 3
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Metric.type
             options:
@@ -48,14 +45,10 @@ fields:
              labels listed in the `MetricDescriptor` must be assigned values.
         __proto:
             number: 2
-            oneof: ""
-        __ui:
-            component: ""
-            flags: []
-            noinit: false
-            noskip: false
+        __ui: null
         meta:
             default: ""
+            placeholder: ""
             hint: ""
             label: label.Metric.labels
             options:
