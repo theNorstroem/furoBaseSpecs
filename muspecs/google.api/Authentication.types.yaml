@@ -1,0 +1,21 @@
+- type: |-
+    google.api.Authentication #`Authentication` defines the authentication configuration for an API.
+
+     Example for an API targeted for external use:
+
+         name: calendar.googleapis.com
+         authentication:
+           providers:
+           - id: google_calendar_auth
+             jwks_uri: https://www.googleapis.com/oauth2/v1/certs
+             issuer: https://securetoken.google.com
+           rules:
+           - selector: "*"
+             requirements:
+               provider_id: google_calendar_auth
+  fields:
+    rules: |-
+        [] google.api.AuthenticationRule:3 #A list of authentication rules that apply to individual API methods.
+
+         **NOTE:** All service configuration rules follow "last one wins" order.
+    providers: '[] google.api.AuthProvider:4 #Defines a set of authentication providers that a service supports.'

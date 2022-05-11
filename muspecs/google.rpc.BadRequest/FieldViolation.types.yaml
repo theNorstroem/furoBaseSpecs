@@ -1,0 +1,10 @@
+- type: |-
+    google.rpc.BadRequest.FieldViolation #Describes violations in a client request. This error type focuses on the
+     syntactic aspects of the request.
+  fields:
+    field: |
+        string:1 #A path leading to a field in the request body. The value will be a
+        sequence of dot-separated identifiers that identify a protocol buffer
+        field. E.g., "field_violations.field" would identify this field.
+    description: |
+        string:2 #A description of why the request element is bad.

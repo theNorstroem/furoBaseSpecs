@@ -1,0 +1,4 @@
+- type: 'google.rpc.DebugInfo #Describes additional debugging info.'
+  fields:
+    stack_entries: '[] string:1 #The stack trace entries indicating where the error occurred.'
+    detail: 'string:2 #Additional debugging information provided by the server.'

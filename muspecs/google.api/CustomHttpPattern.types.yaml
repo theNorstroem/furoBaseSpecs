@@ -1,0 +1,4 @@
+- type: 'google.api.CustomHttpPattern #A custom pattern is used for defining custom HTTP verb.'
+  fields:
+    kind: 'string:1 #The name of this custom HTTP verb.'
+    path: 'string:2 #The path matched by this custom verb.'

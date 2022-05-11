@@ -1,0 +1,6 @@
+- type: |-
+    google.protobuf.ListValue #`ListValue` is a wrapper around a repeated field of values.
+
+     The JSON representation for `ListValue` is JSON array.
+  fields:
+    values: '[] google.protobuf.Value:1 #Repeated field of dynamically typed values.'

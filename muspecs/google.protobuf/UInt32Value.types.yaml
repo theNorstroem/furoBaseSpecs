@@ -1,0 +1,6 @@
+- type: |-
+    google.protobuf.UInt32Value #Wrapper message for `uint32`.
+
+     The JSON representation for `UInt32Value` is JSON number.
+  fields:
+    value: 'uint32:1 #The uint32 value.'

@@ -1,0 +1,6 @@
+- type: 'google.api.Backend #`Backend` defines the backend configuration for a service.'
+  fields:
+    rules: |-
+        [] google.api.BackendRule:1 #A list of API backend rules that apply to individual API methods.
+
+         **NOTE:** All service configuration rules follow "last one wins" order.

@@ -1,0 +1,6 @@
+- type: |-
+    google.protobuf.FloatValue #Wrapper message for `float`.
+
+     The JSON representation for `FloatValue` is JSON number.
+  fields:
+    value: 'float:1 #The float value.'

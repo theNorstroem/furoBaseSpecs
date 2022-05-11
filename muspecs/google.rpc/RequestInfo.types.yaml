@@ -1,0 +1,10 @@
+- type: |-
+    google.rpc.RequestInfo #Contains metadata about the request that clients can attach when filing a bug
+     or providing other forms of feedback.
+  fields:
+    request_id: |-
+        string:1 #An opaque string that should only be interpreted by the service generating
+         it. For example, it can be used to identify requests in the service's logs.
+    serving_data: |-
+        string:2 #Any data that was used to serve this request. For example, an encrypted
+         stack trace that can be sent back to the service provider for debugging.

@@ -1,17 +1,22 @@
+furo: "1.28.0" # the minimal version of furo
 module: github.com/theNorstroem/FuroBaseSpecs
 specDir: "./specs"
 specFormat: "yaml" #set to yaml or json
 dependencies: [] #no dependencies :-)
 dependenciesDir: installedSpecs
 muSpec:
-  types:
-    - "./muspec/**/*types.yaml"
-    - "./muspec/*types.yaml"
-  services:
-    - "./muspec/**/*services.yaml"
-    - "./muspec/*services.yaml"
+  types: # define a set of globs which matches your type definitions
+    - "./muspecs/**/*types.yaml"
+    - "./muspecs/*types.yaml"
+  enums: # define a set of globs which matches your type definitions
+    - "./muspecs/**/*enums.yaml"
+    - "./muspecs/*enums.yaml"
+  services: # define a set of globs which matches your service definitions
+    - "./muspecs/**/*services.yaml"
+    - "./muspecs/*services.yaml"
   goPackageBase: "github.com/theNorstroem/FuroBaseSpecs/dist/pb/" #this is used to prefix the go package option
-  dir: "muspec"
+  dir: "muspecs"
+  forceSync: true # This will delete specs which are deleted in muSpec, this is very useful during prototyping
 commands:
   publishNpm: "scripts/test.sh"
   buildPb: "scripts/buildPb.sh"

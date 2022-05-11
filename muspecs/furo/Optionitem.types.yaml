@@ -1,0 +1,5 @@
+- type: 'furo.Optionitem #Items for fieldoption.list'
+  fields:
+    id: 'string:1 #Id'
+    display_name: 'string:2 #String representation'
+    selected: 'bool:3 #is the item selected'

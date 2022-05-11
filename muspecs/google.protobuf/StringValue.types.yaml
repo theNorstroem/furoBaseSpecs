@@ -1,0 +1,6 @@
+- type: |-
+    google.protobuf.StringValue #Wrapper message for `string`.
+
+     The JSON representation for `StringValue` is JSON string.
+  fields:
+    value: 'string:1 #The string value.'

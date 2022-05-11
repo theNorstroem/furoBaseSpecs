@@ -1,0 +1,13 @@
+- type: 'google.api.DocumentationRule #A documentation rule provides information about individual API elements.'
+  fields:
+    selector: |-
+        string:1 #The selector is a comma-separated list of patterns. Each pattern is a
+         qualified name of the element which may end in "*", indicating a wildcard.
+         Wildcards are only allowed at the end and for a whole component of the
+         qualified name, i.e. "foo.*" is ok, but not "foo.b*" or "foo.*.bar". A
+         wildcard will match one or more components. To specify a default for all
+         applicable elements, the whole pattern "*" is used.
+    description: 'string:2 #Description of the selected API(s).'
+    deprecation_description: |-
+        string:3 #Deprecation description of the selected element(s). It can be provided if
+         an element is marked as `deprecated`.

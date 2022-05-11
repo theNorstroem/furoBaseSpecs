@@ -1,0 +1,4 @@
+- type: 'google.rpc.Help.Link #Describes a URL link.'
+  fields:
+    description: 'string:1 #Describes what the link offers.'
+    url: 'string:2 #The URL of the link.'

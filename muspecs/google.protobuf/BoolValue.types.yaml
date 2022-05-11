@@ -1,0 +1,6 @@
+- type: |-
+    google.protobuf.BoolValue #Wrapper message for `bool`.
+
+     The JSON representation for `BoolValue` is JSON `true` and `false`.
+  fields:
+    value: 'bool:1 #The bool value.'

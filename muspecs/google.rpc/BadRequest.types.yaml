@@ -1,0 +1,5 @@
+- type: |-
+    google.rpc.BadRequest #Describes violations in a client request. This error type focuses on the
+     syntactic aspects of the request.
+  fields:
+    field_violations: '[] google.rpc.BadRequest.FieldViolation:1 #Describes all violations in a client request.'
