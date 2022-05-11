@@ -1,6 +1,0 @@
-- type: |-
-    google.protobuf.BytesValue #Wrapper message for `bytes`.
-
-     The JSON representation for `BytesValue` is JSON string.
-  fields:
-    value: 'bytes:1 #The bytes value.'

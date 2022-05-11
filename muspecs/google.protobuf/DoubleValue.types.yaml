@@ -1,6 +1,0 @@
-- type: |-
-    google.protobuf.DoubleValue #Wrapper message for `double`.
-
-     The JSON representation for `DoubleValue` is JSON number.
-  fields:
-    value: 'double:1 #The double value.'

@@ -1,6 +1,0 @@
-- type: |-
-    google.protobuf.Int32Value #Wrapper message for `int32`.
-
-     The JSON representation for `Int32Value` is JSON number.
-  fields:
-    value: 'int32:1 #The int32 value.'

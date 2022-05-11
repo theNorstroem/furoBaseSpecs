@@ -1,6 +1,0 @@
-- type: |-
-    google.protobuf.Int64Value #Wrapper message for `int64`.
-
-     The JSON representation for `Int64Value` is JSON string.
-  fields:
-    value: 'int64:1 #The int64 value.'
