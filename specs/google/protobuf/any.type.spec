@@ -1,6 +1,6 @@
 name: Any
 type: Any
-description: |
+description: |-
     `Any` contains an arbitrary serialized protocol buffer message along with a
      URL that describes the type of the serialized message.
 
@@ -98,7 +98,7 @@ __proto:
 fields:
     type_url:
         type: string
-        description: |
+        description: |-
             A URL/resource name that uniquely identifies the type of the serialized
              protocol buffer message. This string must contain at least
              one "/" character. The last segment of the URL's path must represent

@@ -1,6 +1,6 @@
 name: Duration
 type: Duration
-description: |+
+description: |-
     A Duration represents a signed, fixed-length span of time represented
      as a count of seconds and fractions of seconds at nanosecond
      resolution. It is independent of any calendar and concepts like "day"
@@ -59,7 +59,6 @@ description: |+
      encoded in JSON format as "3s", while 3 seconds and 1 nanosecond should
      be expressed in JSON format as "3.000000001s", and 3 seconds and 1
      microsecond should be expressed in JSON format as "3.000001s".
-
 lifecycle: null
 __proto:
     package: google.protobuf

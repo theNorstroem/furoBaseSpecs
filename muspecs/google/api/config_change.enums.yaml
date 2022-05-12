@@ -6,4 +6,4 @@
     ADDED: 1
     REMOVED: 2
     MODIFIED: 3
-  target: config_change.proto
+  target: ENUM_config_change.proto

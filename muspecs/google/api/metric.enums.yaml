@@ -1,5 +1,5 @@
-- enum: |
-    google.api.MetricDescriptor_MetricKind #Defines a metric type and its schema. Once a metric descriptor is created,
+- enum: |-
+    google.api.MetricDescriptor.MetricKind #Defines a metric type and its schema. Once a metric descriptor is created,
      deleting or altering it stops data collection and makes the metric type's
      existing data unusable.
   values:
@@ -7,9 +7,9 @@
     GAUGE: 1
     DELTA: 2
     CUMULATIVE: 3
-  target: metric.proto
-- enum: |
-    google.api.MetricDescriptor_ValueType #Defines a metric type and its schema. Once a metric descriptor is created,
+  target: ENUM_metric.proto
+- enum: |-
+    google.api.MetricDescriptor.ValueType #Defines a metric type and its schema. Once a metric descriptor is created,
      deleting or altering it stops data collection and makes the metric type's
      existing data unusable.
   values:
@@ -20,4 +20,4 @@
     STRING: 4
     DISTRIBUTION: 5
     MONEY: 6
-  target: metric.proto
+  target: ENUM_metric.proto

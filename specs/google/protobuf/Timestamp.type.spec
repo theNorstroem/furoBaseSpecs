@@ -1,6 +1,6 @@
 name: Timestamp
 type: Timestamp
-description: |+
+description: |-
     A Timestamp represents a point in time independent of any time zone or local
      calendar, encoded as a count of seconds and fractions of seconds at
      nanosecond resolution. The count is relative to an epoch at UTC midnight on
@@ -92,7 +92,6 @@ description: |+
      the Joda Time's [`ISODateTimeFormat.dateTime()`](
      http://www.joda.org/joda-time/apidocs/org/joda/time/format/ISODateTimeFormat.html#dateTime%2D%2D
      ) to obtain a formatter capable of generating timestamps in this format.
-
 lifecycle: null
 __proto:
     package: google.protobuf

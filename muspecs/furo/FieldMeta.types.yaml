@@ -8,3 +8,4 @@
     readonly: 'bool:4 #Marks the field as readonly. Used for validations.'
     repeated: 'bool:5 #repeated'
     typespecific: 'google.protobuf.Any:7 #Put in type specific metas for your fields here'
+  target: furo.proto

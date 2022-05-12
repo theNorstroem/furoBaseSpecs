@@ -26,7 +26,6 @@ const (
 // Entitycontainer which holds a empty entity. So links and meta is all you can send.
 // Use this as a create response to send propper HATEOAS back to the client without the need
 // to send the complete object.
-//
 type EmptyEntity struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache

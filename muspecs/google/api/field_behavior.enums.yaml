@@ -12,4 +12,4 @@
     OUTPUT_ONLY: 3
     INPUT_ONLY: 4
     IMMUTABLE: 5
-  target: field_behavior.proto
+  target: ENUM_field_behavior.proto

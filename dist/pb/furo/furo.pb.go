@@ -201,7 +201,6 @@ type Fieldoption struct {
 
 	// Add flags for your field. This can be something like "searchable".
 	// //The flags can be used by generators, ui components,...
-	//
 	Flags []string `protobuf:"bytes,2,rep,name=flags,proto3" json:"flags,omitempty"`
 	// a list with options, use furo.optionitem or your own
 	List []*anypb.Any `protobuf:"bytes,1,rep,name=list,proto3" json:"list,omitempty"`

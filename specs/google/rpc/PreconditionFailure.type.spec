@@ -11,7 +11,7 @@ __proto:
     package: google.rpc
     targetfile: error_details.proto
     imports:
-        - google/protobuf/duration.proto
+        - google/rpc/PreconditionFailure/error_details.proto
     options:
         go_package: google.golang.org/genproto/googleapis/rpc/errdetails;errdetails
         java_multiple_files: "true"

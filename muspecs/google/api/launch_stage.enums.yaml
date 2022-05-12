@@ -10,4 +10,4 @@
     BETA: 3
     GA: 4
     DEPRECATED: 5
-  target: launch_stage.proto
+  target: ENUM_launch_stage.proto

@@ -5,3 +5,4 @@
     href: 'string:3 #link'
     type: 'string:4 #mime type'
     service: 'string:5 #name of the service which can handle this link'
+  target: furo.proto

@@ -15,3 +15,4 @@
         int32:3 #Day of month. Must be from 1 to 31 and valid for the year and month, or 0
          if specifying a year/month where the day is not significant.
     display_name: '- string:4 #String representation of the reference'
+  target: type.proto

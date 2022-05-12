@@ -5,3 +5,4 @@
   fields:
     links: '[] furo.Link:2 #the Hateoas links'
     meta: 'furo.Meta:3 #Meta for the response'
+  target: signatures.proto

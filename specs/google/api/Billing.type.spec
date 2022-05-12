@@ -38,7 +38,7 @@ __proto:
     package: google.api
     targetfile: billing.proto
     imports:
-        - google/api/metric.proto
+        - google/api/Billing/billing.proto
     options:
         go_package: google.golang.org/genproto/googleapis/api/serviceconfig;serviceconfig
         java_multiple_files: "true"

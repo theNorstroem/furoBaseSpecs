@@ -57,7 +57,8 @@ lifecycle: null
 __proto:
     package: google.api
     targetfile: monitoring.proto
-    imports: []
+    imports:
+        - google/api/Monitoring/monitoring.proto
     options:
         go_package: google.golang.org/genproto/googleapis/api/serviceconfig;serviceconfig
         java_multiple_files: "true"

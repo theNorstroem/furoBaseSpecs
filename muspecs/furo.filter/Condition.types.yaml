@@ -6,3 +6,4 @@
     aoc: |-
         [] furo.filter.Condition:4 #And bracket with ors inside
         Nesting means and, siblings means or
+  target: filter.proto

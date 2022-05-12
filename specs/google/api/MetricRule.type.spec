@@ -7,7 +7,8 @@ lifecycle: null
 __proto:
     package: google.api
     targetfile: quota.proto
-    imports: []
+    imports:
+        - google/api/MetricRule/quota.proto
     options:
         go_package: google.golang.org/genproto/googleapis/api/serviceconfig;serviceconfig
         java_multiple_files: "true"

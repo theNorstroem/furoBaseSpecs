@@ -1,6 +1,6 @@
 name: MetricDescriptor
 type: MetricDescriptor
-description: |
+description: |-
     Defines a metric type and its schema. Once a metric descriptor is created,
      deleting or altering it stops data collection and makes the metric type's
      existing data unusable.
@@ -9,9 +9,8 @@ __proto:
     package: google.api
     targetfile: metric.proto
     imports:
+        - google/api/MetricDescriptor/metric.proto
         - google/api/label.proto
-        - google/api/launch_stage.proto
-        - google/protobuf/duration.proto
     options:
         go_package: google.golang.org/genproto/googleapis/api/metric;metric
         java_multiple_files: "true"

@@ -20,8 +20,7 @@ __proto:
     package: google.api
     targetfile: distribution.proto
     imports:
-        - google/protobuf/any.proto
-        - google/protobuf/timestamp.proto
+        - google/api/Distribution/distribution.proto
     options:
         go_package: google.golang.org/genproto/googleapis/api/distribution;distribution
         java_multiple_files: "true"

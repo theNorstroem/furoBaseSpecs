@@ -1,6 +1,6 @@
 name: MonitoredResourceDescriptor
 type: MonitoredResourceDescriptor
-description: |
+description: |-
     An object that describes the schema of a [MonitoredResource][google.api.MonitoredResource] object using a
      type name and a set of labels.  For example, the monitored resource
      descriptor for Google Compute Engine VM instances has a type of
@@ -16,8 +16,6 @@ __proto:
     targetfile: monitored_resource.proto
     imports:
         - google/api/label.proto
-        - google/api/launch_stage.proto
-        - google/protobuf/struct.proto
     options:
         cc_enable_arenas: "true"
         go_package: google.golang.org/genproto/googleapis/api/monitoredres;monitoredres

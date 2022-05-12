@@ -12,8 +12,7 @@ __proto:
     package: google.api
     targetfile: monitored_resource.proto
     imports:
-        - google/api/label.proto
-        - google/api/launch_stage.proto
+        - google/api/MonitoredResourceMetadata/monitored_resource.proto
         - google/protobuf/struct.proto
     options:
         cc_enable_arenas: "true"

@@ -1,6 +1,6 @@
 name: Quota
 type: Quota
-description: |+
+description: |-
     Quota configuration helps to achieve fairness and budgeting in service
      usage.
 
@@ -50,7 +50,6 @@ description: |+
             display_name: Write requests
             metric_kind: DELTA
             value_type: INT64
-
 lifecycle: null
 __proto:
     package: google.api

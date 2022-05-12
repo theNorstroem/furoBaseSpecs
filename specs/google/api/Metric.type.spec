@@ -7,10 +7,7 @@ lifecycle: null
 __proto:
     package: google.api
     targetfile: metric.proto
-    imports:
-        - google/api/label.proto
-        - google/api/launch_stage.proto
-        - google/protobuf/duration.proto
+    imports: []
     options:
         go_package: google.golang.org/genproto/googleapis/api/metric;metric
         java_multiple_files: "true"

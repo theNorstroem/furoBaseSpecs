@@ -134,7 +134,7 @@ fields:
         constraints: {}
     path_translation:
         type: unknown
-        description: ""
+        description: no description
         __proto:
             number: 6
         __ui: null

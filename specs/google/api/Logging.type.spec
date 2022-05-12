@@ -34,7 +34,8 @@ lifecycle: null
 __proto:
     package: google.api
     targetfile: logging.proto
-    imports: []
+    imports:
+        - google/api/Logging/logging.proto
     options:
         go_package: google.golang.org/genproto/googleapis/api/serviceconfig;serviceconfig
         java_multiple_files: "true"

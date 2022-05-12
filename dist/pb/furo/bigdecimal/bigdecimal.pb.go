@@ -28,7 +28,6 @@ const (
 // If zero or positive, the scale is the number of digits to the right of the decimal point.
 // If negative, the unscaled value of the number is multiplied by ten to the power of the
 // negation of the scale. For example, a scale of -3 means the unscaled value is multiplied by 1000.
-//
 type BigDecimal struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -37,7 +36,6 @@ type BigDecimal struct {
 	// Arbitrary precision integer unscaled value.
 	UnscaledValue int64 `protobuf:"zigzag64,1,opt,name=unscaled_value,json=unscaledValue,proto3" json:"unscaled_value,omitempty"`
 	// Number of digits to the right of the decimal point.
-	//
 	Scale int32 `protobuf:"varint,2,opt,name=scale,proto3" json:"scale,omitempty"`
 }
 

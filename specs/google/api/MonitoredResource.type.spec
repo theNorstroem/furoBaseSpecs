@@ -18,10 +18,7 @@ lifecycle: null
 __proto:
     package: google.api
     targetfile: monitored_resource.proto
-    imports:
-        - google/api/label.proto
-        - google/api/launch_stage.proto
-        - google/protobuf/struct.proto
+    imports: []
     options:
         cc_enable_arenas: "true"
         go_package: google.golang.org/genproto/googleapis/api/monitoredres;monitoredres

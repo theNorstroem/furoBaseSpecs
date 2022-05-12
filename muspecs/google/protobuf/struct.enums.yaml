@@ -5,4 +5,4 @@
       The JSON representation for `NullValue` is JSON `null`.
   values:
     NULL_VALUE: 0
-  target: struct.proto
+  target: ENUM_struct.proto

@@ -7,12 +7,15 @@ dependenciesDir: installedSpecs
 muSpec:
   types: # define a set of globs which matches your type definitions
     - "./muspecs/**/*types.yaml"
+    - "./muspecs/google/**/*types.yaml"
     - "./muspecs/*types.yaml"
   enums: # define a set of globs which matches your type definitions
     - "./muspecs/**/*enums.yaml"
+    - "./muspecs/google/**/*enums.yaml"
     - "./muspecs/*enums.yaml"
   services: # define a set of globs which matches your service definitions
     - "./muspecs/**/*services.yaml"
+    - "./muspecs/google/**/*services.yaml"
     - "./muspecs/*services.yaml"
   goPackageBase: "github.com/theNorstroem/FuroBaseSpecs/dist/pb/" #this is used to prefix the go package option
   dir: "muspecs"
@@ -23,6 +26,7 @@ commands:
   cleandist: "scripts/cleanupDist.sh"
 flows:
   default:
+    - muSpec2Spec
     - genMessageProtos #we only have messages
     - buildPb
     - genEsModule

@@ -7,3 +7,4 @@
     code: 'string:5 #property code for additional settings'
     flags: '- [] string:6 #Optional attribute flags e.g. is-overwritable'
     is_overwritten: 'bool:7 #Optional flag indicating that the property differs from the original value'
+  target: property.proto
