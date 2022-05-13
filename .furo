@@ -1,4 +1,4 @@
-furo: "1.29.0" # the minimal version of furo
+furo: "1.36.0" # the minimal version of furo
 module: github.com/theNorstroem/FuroBaseSpecs
 specDir: "./specs"
 specFormat: "yaml" #set to yaml or json
