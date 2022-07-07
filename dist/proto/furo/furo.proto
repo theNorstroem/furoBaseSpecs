@@ -10,7 +10,47 @@ option java_package = "pro.furo";
 option objc_class_prefix = "FPB";
 
 import "google/protobuf/any.proto";
+import "google/protobuf/wrappers.proto";
+import "google/rpc/error_details.proto";
 
+
+
+message ConfirmationMessage {  
+
+    // Id of the confirmation message
+    string id = 1;
+
+    // A readable version of the id.
+    string readable_id = 2;
+
+    // Reason why the warning was not followed
+    string reason = 3;
+
+    // Flag to approve the warning
+    google.protobuf.BoolValue proved = 4;
+
+    // Describes all warnings related to an attribute
+    repeated google.rpc.BadRequest.FieldViolation fields = 5;
+
+    // A general localized warning message.
+    google.rpc.LocalizedMessage message = 6;
+}
+
+
+message ErrorMessage {  
+
+    // Id of the error message
+    string id = 1;
+
+    // A readable version of the id.
+    string readable_id = 2;
+
+    // Describes all errors related to an attribute
+    repeated google.rpc.BadRequest.FieldViolation fields = 3;
+
+    // A general localized error message.
+    google.rpc.LocalizedMessage message = 4;
+}
 
 // a single fieldconstraint
 message FieldConstraint {  
@@ -61,6 +101,22 @@ message Fieldoption {
     repeated google.protobuf.Any list = 1;
 }
 
+
+message InformationMessage {  
+
+    // Id of the information, extension of google.rpc.LocalizedMessage
+    string id = 1;
+
+    // A readable version of the id.
+    string readable_id = 2;
+
+    // Describes all information items related to an attribute
+    repeated google.rpc.BadRequest.FieldViolation fields = 3;
+
+    // A general localized information message.
+    google.rpc.LocalizedMessage message = 4;
+}
+
 // link
 message Link {  
 
@@ -78,6 +134,13 @@ message Link {
 
     // name of the service which can handle this link
     string service = 5;
+}
+
+// The `MessageContainer` type defines a logical message model.
+message MessageContainer {  
+
+    // A list of messages that carry the message details. There is a common set of message types for APIs to use.
+    repeated google.protobuf.Any details = 3;
 }
 
 // meta info
@@ -121,4 +184,36 @@ message Reference {
 
     // Hateoas link
     furo.Link link = 3;
+}
+
+
+message SuccessMessage {  
+
+    // Id of the success, extension of google.rpc.LocalizedMessage
+    string id = 1;
+
+    // A readable version of the id.
+    string readable_id = 2;
+
+    // Describes all success items related to an attribute
+    repeated google.rpc.BadRequest.FieldViolation fields = 3;
+
+    // A general localized success message.
+    google.rpc.LocalizedMessage message = 4;
+}
+
+
+message WarningMessage {  
+
+    // Id of the warning message
+    string id = 1;
+
+    // A readable version of the id.
+    string readable_id = 2;
+
+    // Describes all warnings related to an attribute
+    repeated google.rpc.BadRequest.FieldViolation fields = 3;
+
+    // A general localized error message.
+    google.rpc.LocalizedMessage message = 4;
 }
