@@ -28,9 +28,10 @@ flows:
   default:
     - muSpec2Spec
     - genMessageProtos #we only have messages
+    - cleandist
     - buildPb
     - genEsModule
-    - cleandist
+
 build:
   proto:
     targetDir: "dist/proto" #Hint: add this to your proto include path
