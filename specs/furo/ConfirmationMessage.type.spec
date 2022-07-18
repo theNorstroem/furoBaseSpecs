@@ -6,7 +6,7 @@ __proto:
     package: furo
     targetfile: furo.proto
     imports:
-        - google/protobuf/wrappers.proto
+        - google/protobuf/any.proto
         - google/rpc/error_details.proto
     options:
         go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo;furopb
@@ -50,42 +50,6 @@ fields:
             repeated: false
             typespecific: null
         constraints: {}
-    reason:
-        type: string
-        description: Reason why the warning was not followed
-        __proto:
-            number: 3
-        __ui: null
-        meta:
-            default: ""
-            placeholder: furo.confirmationmessage.reason.placeholder
-            hint: ""
-            label: furo.confirmationmessage.reason.label
-            options:
-                flags: []
-                list: []
-            readonly: false
-            repeated: false
-            typespecific: null
-        constraints: {}
-    proved:
-        type: google.protobuf.BoolValue
-        description: Flag to approve the warning
-        __proto:
-            number: 4
-        __ui: null
-        meta:
-            default: ""
-            placeholder: furo.confirmationmessage.proved.placeholder
-            hint: ""
-            label: furo.confirmationmessage.proved.label
-            options:
-                flags: []
-                list: []
-            readonly: false
-            repeated: false
-            typespecific: null
-        constraints: {}
     fields:
         type: google.rpc.BadRequest.FieldViolation
         description: Describes all warnings related to an attribute
@@ -119,6 +83,24 @@ fields:
                 flags: []
                 list: []
             readonly: true
+            repeated: false
+            typespecific: null
+        constraints: {}
+    user_response:
+        type: google.protobuf.Any
+        description: Reason why the warning was not followed, can be a text, checkbox,... is displayed as typerenderer
+        __proto:
+            number: 3
+        __ui: null
+        meta:
+            default: ""
+            placeholder: furo.confirmationmessage.reason.placeholder
+            hint: ""
+            label: furo.confirmationmessage.reason.label
+            options:
+                flags: []
+                list: []
+            readonly: false
             repeated: false
             typespecific: null
         constraints: {}

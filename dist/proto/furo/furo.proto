@@ -7,7 +7,6 @@ option java_outer_classname = "FuroProto";
 option java_package = "furo";
 
 import "google/protobuf/any.proto";
-import "google/protobuf/wrappers.proto";
 import "google/rpc/error_details.proto";
 
 
@@ -20,17 +19,14 @@ message ConfirmationMessage {
     // A readable version of the id.
     string readable_id = 2;
 
-    // Reason why the warning was not followed
-    string reason = 3;
-
-    // Flag to approve the warning
-    google.protobuf.BoolValue proved = 4;
-
     // Describes all warnings related to an attribute
     repeated google.rpc.BadRequest.FieldViolation fields = 5;
 
     // A general localized warning message.
     google.rpc.LocalizedMessage message = 6;
+
+    // Reason why the warning was not followed, can be a text, checkbox,... is displayed as typerenderer
+    google.protobuf.Any user_response = 3;
 }
 
 
@@ -138,6 +134,9 @@ message MessageContainer {
 
     // A list of messages that carry the message details. There is a common set of message types for APIs to use.
     repeated google.protobuf.Any details = 3;
+
+    // Use this field to notify a success. Even when a action was successful, it can have information and warning states.
+    bool success = 15;
 }
 
 // meta info
