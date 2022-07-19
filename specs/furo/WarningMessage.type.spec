@@ -50,7 +50,7 @@ fields:
             typespecific: null
         constraints: {}
     fields:
-        type: google.rpc.BadRequest.FieldViolation
+        type: furo.MCFieldViolation
         description: Describes all warnings related to an attribute
         __proto:
             number: 3

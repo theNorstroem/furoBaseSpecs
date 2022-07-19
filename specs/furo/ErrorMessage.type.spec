@@ -30,7 +30,10 @@ fields:
             readonly: true
             repeated: false
             typespecific: null
-        constraints: {}
+        constraints:
+            required:
+                is: "true"
+                message: furo.errormessage.id.constraint.required.message
     readable_id:
         type: string
         description: A readable version of the id.
@@ -50,7 +53,7 @@ fields:
             typespecific: null
         constraints: {}
     fields:
-        type: google.rpc.BadRequest.FieldViolation
+        type: furo.MCFieldViolation
         description: Describes all errors related to an attribute
         __proto:
             number: 3
