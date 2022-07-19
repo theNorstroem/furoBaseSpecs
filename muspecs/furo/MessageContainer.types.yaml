@@ -23,7 +23,6 @@
     id: '-* string:1 #Id of the error message'
     readable_id: '- string:2 #A readable version of the id.'
     fields: '-[] furo.MCFieldViolation:3 #Describes all errors related to an attribute'
-    message: '- google.rpc.LocalizedMessage:4 #A general localized error message.'
   target: furo.proto
 
 - type: 'furo.WarningMessage #'
@@ -31,7 +30,6 @@
     id: '- string:1 #Id of the warning message'
     readable_id: '- string:2 #A readable version of the id.'
     fields: '-[] furo.MCFieldViolation:3 #Describes all warnings related to an attribute'
-    message: '- google.rpc.LocalizedMessage:4 #A general localized error message.'
   target: furo.proto
 
 - type: 'furo.InformationMessage #'
@@ -39,7 +37,6 @@
     id: '- string:1 #Id of the information, extension of google.rpc.LocalizedMessage'
     readable_id: '- string:2 #A readable version of the id.'
     fields: '-[] furo.MCFieldViolation:3 #Describes all information items related to an attribute'
-    message: '- google.rpc.LocalizedMessage:4 #A general localized information message.'
   target: furo.proto
 
 - type: 'furo.SuccessMessage #'
@@ -47,7 +44,6 @@
     id: '- string:1 #Id of the success, extension of google.rpc.LocalizedMessage'
     readable_id: '- string:2 #A readable version of the id.'
     fields: '-[] furo.MCFieldViolation:3 #Describes all success items related to an attribute'
-    message: '- google.rpc.LocalizedMessage:4 #A general localized success message.'
   target: furo.proto
 
 - type: 'furo.MCFieldViolation # Field violation with user response'
@@ -59,4 +55,5 @@
     description: |-
      string:2 #A localized description of why the request element is bad.
     user_response: 'google.protobuf.Any:3 #Optional user confirmation response, can be a text, checkbox,... is displayed as typerenderer'
+    message: '- google.rpc.LocalizedMessage:4 #Extended message for the violation.'
   target: furo.proto

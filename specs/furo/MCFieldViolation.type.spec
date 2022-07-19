@@ -7,6 +7,7 @@ __proto:
     targetfile: furo.proto
     imports:
         - google/protobuf/any.proto
+        - google/rpc/error_details.proto
     options:
         go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo;furopb
         java_multiple_files: "true"
@@ -67,6 +68,24 @@ fields:
                 flags: []
                 list: []
             readonly: false
+            repeated: false
+            typespecific: null
+        constraints: {}
+    message:
+        type: google.rpc.LocalizedMessage
+        description: Extended message for the violation.
+        __proto:
+            number: 4
+        __ui: null
+        meta:
+            default: ""
+            placeholder: furo.mcfieldviolation.message.placeholder
+            hint: ""
+            label: furo.mcfieldviolation.message.label
+            options:
+                flags: []
+                list: []
+            readonly: true
             repeated: false
             typespecific: null
         constraints: {}

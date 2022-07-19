@@ -5,8 +5,7 @@ lifecycle: null
 __proto:
     package: furo
     targetfile: furo.proto
-    imports:
-        - google/rpc/error_details.proto
+    imports: []
     options:
         go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo;furopb
         java_multiple_files: "true"
@@ -65,23 +64,5 @@ fields:
                 list: []
             readonly: true
             repeated: true
-            typespecific: null
-        constraints: {}
-    message:
-        type: google.rpc.LocalizedMessage
-        description: A general localized error message.
-        __proto:
-            number: 4
-        __ui: null
-        meta:
-            default: ""
-            placeholder: furo.warningmessage.message.placeholder
-            hint: ""
-            label: furo.warningmessage.message.label
-            options:
-                flags: []
-                list: []
-            readonly: true
-            repeated: false
             typespecific: null
         constraints: {}
