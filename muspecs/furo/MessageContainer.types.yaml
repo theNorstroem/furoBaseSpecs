@@ -6,7 +6,8 @@
 
 - type: 'furo.MessageContainerGrouplabel #MessageContainerGrouplabel Helps you to structure the errors and warnings for the UI.'
   fields:
-    title: 'string:1 # Title of the group, should be a localized string.'
+    id: '-* string:1 #Id'
+    title: 'string:2 # Title of the group, should be a localized string.'
   target: furo.proto
 
 - type: 'furo.ConfirmationMessage # Put required responses which are not associated to a field in this type.'

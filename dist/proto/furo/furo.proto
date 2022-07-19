@@ -152,7 +152,10 @@ message MessageContainer {
 message MessageContainerGrouplabel {  
 
     // Title of the group, should be a localized string.
-    string title = 1;
+    string title = 2;
+
+    // Id
+    string id = 1;
 }
 
 // meta info

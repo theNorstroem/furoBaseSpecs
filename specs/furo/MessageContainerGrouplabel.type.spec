@@ -16,7 +16,7 @@ fields:
         type: string
         description: Title of the group, should be a localized string.
         __proto:
-            number: 1
+            number: 2
         __ui: null
         meta:
             default: ""
@@ -30,3 +30,24 @@ fields:
             repeated: false
             typespecific: null
         constraints: {}
+    id:
+        type: string
+        description: Id
+        __proto:
+            number: 1
+        __ui: null
+        meta:
+            default: ""
+            placeholder: furo.messagecontainergrouplabel.id.placeholder
+            hint: ""
+            label: furo.messagecontainergrouplabel.id.label
+            options:
+                flags: []
+                list: []
+            readonly: true
+            repeated: false
+            typespecific: null
+        constraints:
+            required:
+                is: "true"
+                message: furo.messagecontainergrouplabel.id.constraint.required.message
