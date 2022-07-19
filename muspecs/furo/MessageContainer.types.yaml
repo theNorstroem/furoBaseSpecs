@@ -22,28 +22,28 @@
   fields:
     id: '-* string:1 #Id of the error message'
     readable_id: '- string:2 #A readable version of the id.'
-    fields: '-[] furo.MCFieldViolation:3 #Describes all errors related to an attribute'
+    fields: '[] furo.MCFieldViolation:3 #Describes all errors related to an attribute'
   target: furo.proto
 
 - type: 'furo.WarningMessage #'
   fields:
     id: '- string:1 #Id of the warning message'
     readable_id: '- string:2 #A readable version of the id.'
-    fields: '-[] furo.MCFieldViolation:3 #Describes all warnings related to an attribute'
+    fields: '[] furo.MCFieldViolation:3 #Describes all warnings related to an attribute'
   target: furo.proto
 
 - type: 'furo.InformationMessage #'
   fields:
     id: '- string:1 #Id of the information, extension of google.rpc.LocalizedMessage'
     readable_id: '- string:2 #A readable version of the id.'
-    fields: '-[] furo.MCFieldViolation:3 #Describes all information items related to an attribute'
+    fields: '[] furo.MCFieldViolation:3 #Describes all information items related to an attribute'
   target: furo.proto
 
 - type: 'furo.SuccessMessage #'
   fields:
     id: '- string:1 #Id of the success, extension of google.rpc.LocalizedMessage'
     readable_id: '- string:2 #A readable version of the id.'
-    fields: '-[] furo.MCFieldViolation:3 #Describes all success items related to an attribute'
+    fields: '[] furo.MCFieldViolation:3 #Describes all success items related to an attribute'
   target: furo.proto
 
 - type: 'furo.MCFieldViolation # Field violation with user response'
