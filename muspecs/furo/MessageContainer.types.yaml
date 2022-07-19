@@ -4,10 +4,9 @@
     success: 'bool:15 # Use this field to notify a success. Even when a action was successful, it can have information and warning states.'
   target: furo.proto
 
-- type: 'furo.MessageContainerGroup #MessageContainerGroup Helps you grouping the errors and warnings for the UI.'
+- type: 'furo.MessageContainerGrouplabel #MessageContainerGrouplabel Helps you to structure the errors and warnings for the UI.'
   fields:
-    details: '[] google.protobuf.Any:1 #A list of messages that carry the message details. '
-    title: 'string:2 # Title of the group, should be a localized string.'
+    title: 'string:1 # Title of the group, should be a localized string.'
   target: furo.proto
 
 - type: 'furo.ConfirmationMessage # Put required responses which are not associated to a field in this type.'
