@@ -37,7 +37,7 @@ fields:
                 message: furo.confirmationmessage.id.constraint.required.message
     readable_id:
         type: string
-        description: A localized description of the confirmation.
+        description: A readable version of the id.
         __proto:
             number: 2
         __ui: null
@@ -49,7 +49,7 @@ fields:
             options:
                 flags: []
                 list: []
-            readonly: false
+            readonly: true
             repeated: false
             typespecific: null
         constraints: {}
