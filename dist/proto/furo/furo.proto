@@ -29,7 +29,7 @@ message ConfirmationMessage {
     google.protobuf.Any user_response = 3;
 
     // A localized description of the confirmation.
-    string description = 2;
+    string description = 4;
 }
 
 

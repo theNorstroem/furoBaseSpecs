@@ -93,7 +93,7 @@ fields:
         type: string
         description: A localized description of the confirmation.
         __proto:
-            number: 2
+            number: 4
         __ui: null
         meta:
             default: ""
