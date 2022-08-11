@@ -20,7 +20,7 @@ fields:
             number: 1
         __ui: null
         meta:
-            default: ""
+            default: "0"
             placeholder: furo.messagecontainer.code.placeholder
             hint: ""
             label: furo.messagecontainer.code.label
