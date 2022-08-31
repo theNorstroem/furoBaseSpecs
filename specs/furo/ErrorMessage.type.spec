@@ -26,13 +26,10 @@ fields:
             options:
                 flags: []
                 list: []
-            readonly: true
+            readonly: false
             repeated: false
             typespecific: null
-        constraints:
-            required:
-                is: "true"
-                message: furo.errormessage.id.constraint.required.message
+        constraints: {}
     fields:
         type: furo.MCFieldViolation
         description: Describes all errors related to an attribute
@@ -65,7 +62,7 @@ fields:
             options:
                 flags: []
                 list: []
-            readonly: true
+            readonly: false
             repeated: false
             typespecific: null
         constraints: {}

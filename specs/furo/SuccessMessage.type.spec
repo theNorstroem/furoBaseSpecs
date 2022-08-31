@@ -26,7 +26,7 @@ fields:
             options:
                 flags: []
                 list: []
-            readonly: true
+            readonly: false
             repeated: false
             typespecific: null
         constraints: {}
@@ -62,7 +62,7 @@ fields:
             options:
                 flags: []
                 list: []
-            readonly: true
+            readonly: false
             repeated: false
             typespecific: null
         constraints: {}

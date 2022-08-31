@@ -26,13 +26,10 @@ fields:
             options:
                 flags: []
                 list: []
-            readonly: true
+            readonly: false
             repeated: false
             typespecific: null
-        constraints:
-            required:
-                is: "true"
-                message: furo.messagecontainergrouplabel.id.constraint.required.message
+        constraints: {}
     title:
         type: string
         description: Title of the group, should be a localized string.
