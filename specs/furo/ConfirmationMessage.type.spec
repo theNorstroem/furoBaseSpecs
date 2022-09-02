@@ -8,10 +8,12 @@ __proto:
     imports:
         - google/protobuf/any.proto
     options:
+        csharp_namespace: Furo
         go_package: github.com/theNorstroem/FuroBaseSpecs/dist/pb/furo;furopb
         java_multiple_files: "true"
         java_outer_classname: FuroProto
-        java_package: furo
+        java_package: pro.furo
+        objc_class_prefix: FPB
 fields:
     id:
         type: string
