@@ -40,6 +40,16 @@ message ErrorMessage {
     string message = 3;
 }
 
+// FeatureToggle is the state for a feature toggle identified by the key field
+message FeatureToggle {  
+
+    // Id of the furo.FeatureToggle.
+    string key = 1;
+
+    // True for allowed, false for denied.
+    bool state = 2;
+}
+
 // a single fieldconstraint
 message FieldConstraint {  
 
@@ -153,6 +163,9 @@ message MessageContainer {
 
     // Use this field to notify a success. Even when a action was successful, it can have information and warning states.
     bool success = 15;
+
+    // A list of feature toggles
+    repeated furo.FeatureToggle feature_toggles = 4;
 }
 
 // MessageContainerGrouplabel Helps you to structure the errors and warnings for the UI.

@@ -87,3 +87,21 @@ fields:
             repeated: false
             typespecific: null
         constraints: {}
+    feature_toggles:
+        type: furo.FeatureToggle
+        description: A list of feature toggles
+        __proto:
+            number: 4
+        __ui: null
+        meta:
+            default: ""
+            placeholder: furo.messagecontainer.featuretoggles.placeholder
+            hint: ""
+            label: furo.messagecontainer.featuretoggles.label
+            options:
+                flags: []
+                list: []
+            readonly: false
+            repeated: true
+            typespecific: null
+        constraints: {}

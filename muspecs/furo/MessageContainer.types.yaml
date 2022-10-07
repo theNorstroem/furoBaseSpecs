@@ -5,6 +5,7 @@
       string:2 
       #This field is for compatibility with google.rpc.Status.
     details: '[] google.protobuf.Any:3 #A list of messages that carry the message details. There is a common set of message types for APIs to use.'
+    feature_toggles: '[] furo.FeatureToggle: 4 # A list of feature toggles'
     success: 'bool:15 # Use this field to notify a success. Even when a action was successful, it can have information and warning states.'
   target: furo.proto
 
@@ -60,4 +61,12 @@
      string:2 #A localized description of why the request element is bad.
     user_response: 'google.protobuf.Any:3 #Optional user confirmation response, can be a text, checkbox,... is displayed as typerenderer'
     message: 'string:4 #Extended message for the field violation.'
+  target: furo.proto
+
+- type: |-
+    furo.FeatureToggle
+    #FeatureToggle is the state for a feature toggle identified by the key field
+  fields:
+    key: 'string:1 #Id of the furo.FeatureToggle.'
+    state: 'bool:2 # True for allowed, false for denied.'
   target: furo.proto
