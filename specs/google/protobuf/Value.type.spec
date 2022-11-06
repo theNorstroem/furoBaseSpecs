@@ -11,9 +11,9 @@ lifecycle: null
 __proto:
     package: google.protobuf
     targetfile: struct.proto
-    imports: []
+    imports:
+        - google/protobuf/ENUM_struct.proto
     options:
-        cc_enable_arenas: "true"
         csharp_namespace: Google.Protobuf.WellKnownTypes
         go_package: google.golang.org/protobuf/types/known/structpb
         java_multiple_files: "true"
@@ -22,7 +22,7 @@ __proto:
         objc_class_prefix: GPB
 fields:
     null_value:
-        type: unknown
+        type: google.protobuf.NullValue
         description: Represents a null value.
         __proto:
             number: 1

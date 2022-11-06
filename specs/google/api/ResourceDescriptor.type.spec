@@ -113,9 +113,9 @@ lifecycle: null
 __proto:
     package: google.api
     targetfile: resource.proto
-    imports: []
+    imports:
+        - google/api/ResourceDescriptor/ENUM_resource.proto
     options:
-        cc_enable_arenas: "true"
         go_package: google.golang.org/genproto/googleapis/api/annotations;annotations
         java_multiple_files: "true"
         java_outer_classname: ResourceProto
@@ -208,7 +208,7 @@ fields:
             typespecific: null
         constraints: {}
     history:
-        type: unknown
+        type: google.api.ResourceDescriptor.History
         description: |-
             Optional. The historical or future-looking state of the resource pattern.
 
@@ -288,7 +288,7 @@ fields:
             typespecific: null
         constraints: {}
     style:
-        type: unknown
+        type: google.api.ResourceDescriptor.Style
         description: |-
             Style flag(s) for this resource.
              These indicate that a resource is expected to conform to a given
